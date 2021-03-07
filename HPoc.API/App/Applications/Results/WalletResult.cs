@@ -1,0 +1,65 @@
+﻿using App.Domains.Wallets;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace  App.Applications.Results
+{
+    public sealed class WalletResult
+    {
+        public Guid WalletId { get;}
+        public decimal CurrentBalance { get; }
+        public decimal TotalExpenses { get; }
+        public decimal TotalIncome { get; }
+        public string CurrencyCode { get; }
+        public string WalletNumber { get; }
+
+        public string WalletType { get;  }
+
+        public List<TransactionResult> Transactions { get; }
+
+        public WalletResult(Guid walletId, 
+            string currencyCode,
+            string walletType,
+            decimal currentBalance,
+            decimal totalIncome,
+            decimal totalExpenses, 
+            string walletNumber, 
+            List<TransactionResult> transactions)
+        {
+            WalletId = walletId;
+            CurrencyCode = currencyCode;
+            WalletType = walletType;
+            CurrentBalance = currentBalance;
+            TotalIncome = totalIncome;
+            TotalExpenses = totalExpenses;
+            WalletNumber = walletNumber;
+            Transactions = transactions;
+        }
+
+        public WalletResult(Wallet wallet)
+        {
+            WalletId = wallet.Id;
+            WalletNumber = wallet.WalletNumber.Text;
+            CurrentBalance = wallet.GetWalletBalance();
+            TotalIncome = wallet.GetTotalIcome();
+            TotalExpenses = wallet.GetTotalExpenses();
+            CurrencyCode =wallet.CurrencyCode;
+            WalletType =wallet.WalletType;
+
+            List<TransactionResult> transactionResults = new List<TransactionResult>();
+            wallet.GetWalletTransactions(10).ToList().ForEach(transaction =>
+            {
+                var transactionResult = new TransactionResult(transaction.TransactionType,
+                    transaction.Amount, transaction.TransactionDate,
+                    transaction.Narration,
+                    transaction.Reference);
+
+                transactionResults.Add(transactionResult);
+            });
+
+            Transactions = transactionResults;
+
+        }
+    }
+}
