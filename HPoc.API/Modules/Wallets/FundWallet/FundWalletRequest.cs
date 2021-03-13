@@ -8,4 +8,10 @@ namespace HPoc.API.Modules.Wallets.FundWallet
         public string WalletNumber { get; set; }
         public decimal Amount { get; set; }
     }
+
+    public class FundWalletRequestNumber
+    {
+        public string WalletNumber { get; set; }
+        public decimal Amount { get; set; }
+    }
 }

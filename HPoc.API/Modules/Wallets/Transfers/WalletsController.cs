@@ -30,5 +30,25 @@ namespace HPoc.API.Modules.Wallets.Transfers
             }
 
         }
+
+
+        [HttpPost("transfer/by-number", Name = nameof(TransferFundByNumber))]
+        public async Task<IActionResult> TransferFundByNumber([FromBody] FundTransferbyNumberRequest request)
+        {
+            try
+            {
+                var result = await _fundTransfer.Execute(request.SendingNumber,
+                              request.RecievingNumber, request.Amount, request.Narration);
+
+                if (result is null) { return new NotFoundResult(); }
+
+                return Ok(result);
+            }
+            catch (System.Exception ex)
+            {
+                throw;
+            }
+
+        }
     }
 }

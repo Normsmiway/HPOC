@@ -13,10 +13,22 @@ namespace HPoc.API.Modules.Wallets.FundWallet
         }
 
         [HttpPatch("fund", Name = nameof(FundWallet))]
-        public async Task<IActionResult> FundWallet([FromBody]FundWalletRequest request)
+        public async Task<IActionResult> FundWallet([FromBody] FundWalletRequest request)
         {
             FundingResult result = await _fundWallet.Execute(request.WalletId, request.Amount);
+            return GetFundingResult(result);
+        }
+        [HttpPatch("fund/by-number", Name = nameof(FundWalletByNumber))]
+        public async Task<IActionResult> FundWalletByNumber([FromBody] FundWalletRequestNumber request)
+        {
+            FundingResult result = await _fundWallet.Execute(request.WalletNumber, request.Amount);
+            return GetFundingResult(result);
+        }
 
+
+        #region
+        private static IActionResult GetFundingResult(FundingResult result)
+        {
             if (result is null)
                 return new NoContentResult();
 
@@ -28,5 +40,7 @@ namespace HPoc.API.Modules.Wallets.FundWallet
 
             return new OkObjectResult(model);
         }
+
+        #endregion
     }
 }

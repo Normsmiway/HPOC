@@ -16,11 +16,26 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
             _queries = queries;
         }
         [HttpGet("details/{walletId}", Name = "GetWalletDetails")]
-        public async Task<IActionResult> GetWallet(Guid walletId)
+        public async Task<IActionResult> GetWalletDetails(Guid walletId)
         {
             var wallet = await _queries.GetWalletAsync(walletId);
-            List<TransactionModel> transactions = new List<TransactionModel>();
+            List<TransactionModel> transactions = new();
 
+            return GetWalletDetails(wallet, transactions);
+        }
+
+        [HttpGet("details/by-number/{walletNumber}", Name = "GetWalletDetailsByNumber")]
+        public async Task<IActionResult> GetWalletDetailsByNumber(string walletNumber)
+        {
+            var wallet = await _queries.GetWalletAsync(walletNumber);
+            List<TransactionModel> transactions = new();
+
+            return GetWalletDetails(wallet, transactions);
+        }
+
+        #region private helper
+        private static IActionResult GetWalletDetails(App.Applications.Results.WalletResult wallet, List<TransactionModel> transactions)
+        {
             foreach (var item in wallet.Transactions)
             {
                 var transaction = new TransactionModel(
@@ -33,18 +48,11 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
 
 
             return new OkObjectResult(new
-                WalletDetailsModel(wallet.WalletId, wallet.CurrentBalance,
+                WalletDetailsModel(wallet.WalletId,wallet.WalletNumber, wallet.CurrentBalance,
                 wallet.TotalIncome, wallet.TotalExpenses,
                 wallet.CurrencyCode, wallet.WalletType,
                 transactions));
         }
-    }
-
-    public class WalletDetailsResultModel
-    {
-        public string Type { get; set; }
-        public string CurrencyCode { get; set; }
-        public string Name { get; set; }
-        public string WalletNumber { get; set; }
+        #endregion
     }
 }

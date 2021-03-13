@@ -7,5 +7,6 @@ namespace App.Applications.UseCases.Withdrawal
     public interface IWithdrawal
     {
         Task<WithdrawalResult> Execute(Guid walletId, Amount amount,string narration);
+        Task<WithdrawalResult> Execute(string walletNumber, Amount amount, string narration);
     }
 }

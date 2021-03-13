@@ -12,7 +12,8 @@ namespace App.Applications.UseCases.GetUsers
 {
     public interface IUserQueries
     {
-        public Task<UserResult> GetUser(Guid userId);
+        Task<UserResult> GetUser(Guid userId);
+        Task<List<UserResult>> GetUsers();
     }
 
 
@@ -33,7 +34,28 @@ namespace App.Applications.UseCases.GetUsers
             if (user is null)
                 throw new UserNotFoundException();
 
-            List<WalletResult> walletResults = new List<WalletResult>();
+            return await GetUserResult(user);
+        }
+        public async Task<List<UserResult>> GetUsers()
+        {
+            List<UserResult> usersResult = new();
+            var users = _context.Users;
+
+            if (users is not null && users.Any())
+                foreach (var user in users)
+                {
+                    usersResult.Add(await GetUserResult(user));
+                }
+            return usersResult;
+
+            throw new UserNotFoundException();
+        }
+
+
+        #region private helper methods
+        private async Task<UserResult> GetUserResult(User user)
+        {
+            List<WalletResult> walletResults = new();
 
             foreach (Guid walletId in user.Wallets)
             {
@@ -46,5 +68,6 @@ namespace App.Applications.UseCases.GetUsers
 
             return await Task.FromResult(userResult);
         }
+        #endregion
     }
 }

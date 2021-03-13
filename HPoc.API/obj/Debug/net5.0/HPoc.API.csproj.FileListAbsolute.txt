@@ -27,7 +27,6 @@ C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\HPoc.API\obj\Debug\net5.0\
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\HPoc.API\obj\Debug\net5.0\ref\HPoc.API.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\HPoc.API\obj\Debug\net5.0\HPoc.API.pdb
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\HPoc.API\obj\Debug\net5.0\HPoc.API.genruntimeconfig.cache
-C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.csprojAssemblyReference.cache
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.AssemblyInfoInputs.cache
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.AssemblyInfo.cs

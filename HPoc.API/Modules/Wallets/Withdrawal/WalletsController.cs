@@ -13,11 +13,25 @@ namespace HPoc.API.Modules.Wallets.Withdrawal
             _withdrawal = withdrawal;
         }
         [HttpPost("withrawfund", Name = nameof(WithrawFund))]
-        public async Task<IActionResult> WithrawFund([FromBody] WithFundRequest request)
+        public async Task<IActionResult> WithrawFund([FromBody] WithdrawalFundRequest request)
         {
             var result = await _withdrawal.Execute(request.WalletId, request.Amount, request.Narration);
 
-            if(result is null) { return new NoContentResult(); }
+            return GetWithrawalResult(result);
+        }
+
+        [HttpPost("withrawfund/by-number", Name = nameof(WithrawFundByNumber))]
+        public async Task<IActionResult> WithrawFundByNumber([FromBody] WithdrawalByNumberFundRequest request)
+        {
+            var result = await _withdrawal.Execute(request.WalletNumber, request.Amount, request.Narration);
+            
+            return GetWithrawalResult(result);
+        }
+
+        #region private helper methods
+        private IActionResult GetWithrawalResult(WithdrawalResult result)
+        {
+            if (result is null) { return new NoContentResult(); }
 
             WithdrawalResultModel model = new WithdrawalResultModel(
                 result.Transaction.Amount,
@@ -29,5 +43,6 @@ namespace HPoc.API.Modules.Wallets.Withdrawal
 
             return Ok(model);
         }
+        #endregion
     }
 }

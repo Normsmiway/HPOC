@@ -38,6 +38,7 @@ namespace App.Applications.UseCases.Transfer
                 throw new InvalidTransferException();
             }
             var withrawalResult = await _withdrawal.Execute(sendingWalletId, amount, narration);
+          
             if (withrawalResult is not null)
             {
 
@@ -52,8 +53,8 @@ namespace App.Applications.UseCases.Transfer
                 var receiver = await GetUser(usrId);
 
                 return new FundTransferResult(
-                    new Debit(sendingWalletId, amount, narration),
-                    new Credit(recievingWalletId, fundResult.Transaction.Amount),
+                    new Debit(sendingWallet.WalletId, amount, narration),
+                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount),
                     sender.Name,
                     withrawalResult.Transaction.Currency,
                     receiver.Name,
@@ -63,16 +64,59 @@ namespace App.Applications.UseCases.Transfer
             return default;
         }
 
+        public async Task<FundTransferResult> Execute(string sendingWalletNumber, string recievingWalletNumber, Amount amount, string narration)
+        {
+            //Ensure both debit and credit accoount exits
+            var sendingWallet = await GetWallet(sendingWalletNumber);
+            var receivingWallet = await GetWallet(recievingWalletNumber);
+
+            if (sendingWalletNumber.Equals(recievingWalletNumber))
+            {
+                throw new InvalidTransferException();
+            }
+            var withrawalResult = await _withdrawal.Execute(sendingWalletNumber, amount, narration);
+
+            if (withrawalResult is not null)
+            {
+
+
+                _ = Guid.TryParse(sendingWallet?.UserId, out Guid senderUsrId);
+                var sender = await GetUser(senderUsrId);
+
+                var fundResult = await _funding.Execute(recievingWalletNumber, amount);
+
+
+                _ = Guid.TryParse(receivingWallet?.UserId, out Guid usrId);
+                var receiver = await GetUser(usrId);
+
+                return new FundTransferResult(
+                    new Debit(sendingWallet.WalletId, amount, narration),
+                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount),
+                    sender.Name,
+                    withrawalResult.Transaction.Currency,
+                    receiver.Name,
+                    receivingWallet.WalletNumber);
+            }
+
+            return default;
+        }
+
+        #region private helper methods
         private async Task<WalletResult> GetWallet(Guid walletId)
         {
             var wallet = await _walletQueries.GetWalletAsync(walletId);
             return wallet;
         }
-
+        private async Task<WalletResult> GetWallet(string walletNumber)
+        {
+            var wallet = await _walletQueries.GetWalletAsync(walletNumber);
+            return wallet;
+        }
         private async Task<UserResult> GetUser(Guid usrId)
         {
             var user = await _userQueries.GetUser(usrId);
             return user;
         }
+        #endregion
     }
 }

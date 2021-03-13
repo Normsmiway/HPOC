@@ -1,4 +1,5 @@
-﻿using App.Applications.UseCases.GetUsers;
+﻿using App.Applications.Results;
+using App.Applications.UseCases.GetUsers;
 using HPoc.API.Modules.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -16,6 +17,19 @@ namespace HPoc.API.Modules.Users.Enquiry
         {
             _queries = queries;
         }
+
+        [HttpGet("details", Name = "GetUsers")]
+        public async Task<IActionResult> GetUsers()
+        {
+            List<UserDetailsModel> usersDetails = new();
+            var users = await _queries.GetUsers();
+            users.ForEach(user =>
+            {
+                usersDetails.Add(GetUserDetails(user));
+            });
+            return Ok(usersDetails);
+        }
+
         [HttpGet("details/{userId}", Name = "GetUserDetails")]
         public async Task<IActionResult> GetUser(Guid userId)
         {
@@ -23,11 +37,19 @@ namespace HPoc.API.Modules.Users.Enquiry
 
             if (user is null) { return new NoContentResult(); }
 
-            List<WalletDetailsModel> wallets = new List<WalletDetailsModel>();
+            UserDetailsModel model = GetUserDetails(user);
+
+            return Ok(model);
+        }
+
+        #region private helper methods
+        private static UserDetailsModel GetUserDetails(UserResult user)
+        {
+            List<WalletDetailsModel> wallets = new();
 
             foreach (var wallet in user.WalletResults)
             {
-                List<TransactionModel> transactions = new List<TransactionModel>();
+                List<TransactionModel> transactions = new();
 
                 foreach (var item in wallet.Transactions)
                 {
@@ -40,6 +62,7 @@ namespace HPoc.API.Modules.Users.Enquiry
                 }
                 wallets.Add(new WalletDetailsModel(
                     wallet.WalletId,
+                    wallet.WalletNumber,
                     wallet.CurrentBalance,
                     wallet.TotalIncome,
                     wallet.TotalExpenses,
@@ -48,15 +71,15 @@ namespace HPoc.API.Modules.Users.Enquiry
                     transactions));
             }
 
-            UserDetailsModel model = new UserDetailsModel(
+            UserDetailsModel model = new(
                 user.UserId,
                 user.PhoneNumber,
                 user.Email,
                 user.Name,
                 DateTime.Today.AddYears(-18),
                 wallets);
-
-            return Ok(model);
+            return model;
         }
+        #endregion
     }
 }

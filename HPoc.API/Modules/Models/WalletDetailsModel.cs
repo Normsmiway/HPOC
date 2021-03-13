@@ -6,21 +6,23 @@ namespace HPoc.API.Modules.Models
     public sealed class WalletDetailsModel
     {
         public Guid WalletId { get; }
+        public string WalletNumber { get; }
         public decimal CurrentBalance { get; }
         public string CurrencyCode { get; }
         public string WalletType { get; }
         public decimal TotalExpences { get; }
-        public decimal TotalIncome { get; set; }
+        public decimal TotalIncome { get; }
         public List<TransactionModel> Transactions { get; }
 
 
 
-        public WalletDetailsModel(Guid walletId,
+        public WalletDetailsModel(Guid walletId, string walletNumber,
             decimal currentBalance,decimal totalIncome,
             decimal totalExpenses,string currencycode,
             string walletType,List<TransactionModel> transactions)
         {
             WalletId = walletId;
+            WalletNumber = walletNumber;
             CurrentBalance = currentBalance;
             CurrencyCode = currencycode;
             WalletType = walletType;

@@ -17,6 +17,18 @@ namespace App.Applications.UseCases.Withdrawal
         public async Task<WithdrawalResult> Execute(Guid walletId, Amount amount, string narration)
         {
             Wallet wallet = await _store.Get(walletId);
+            return await GetWithdrawalResult(amount, narration, wallet);
+        }
+
+        public async Task<WithdrawalResult> Execute(string walletNumber, Amount amount, string narration)
+        {
+            Wallet wallet = await _store.Get(walletNumber);
+            return await GetWithdrawalResult(amount, narration, wallet);
+        }
+
+        #region private helper methods
+        private async Task<WithdrawalResult> GetWithdrawalResult(Amount amount, string narration, Wallet wallet)
+        {
             if (wallet is null)
                 throw new WalletNotFoundException("Wallet not found");
 
@@ -29,5 +41,6 @@ namespace App.Applications.UseCases.Withdrawal
             return new WithdrawalResult(
                 debit, wallet.GetWalletBalance(), wallet.CurrencyCode);
         }
+        #endregion
     }
 }
