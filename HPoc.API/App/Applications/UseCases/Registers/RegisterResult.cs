@@ -23,7 +23,8 @@ namespace App.Applications.UseCases.Registers
                         transaction.TransactionDate,
                         wallet.CurrencyCode,
                         transaction.Narration,
-                        transaction.Reference));
+                        transaction.Reference,
+                        transaction.MarchantRefence));
             }
 
             Wallet = new WalletResult(wallet.Id,
@@ -41,7 +42,7 @@ namespace App.Applications.UseCases.Registers
                 Wallet
             };
 
-            User = new UserResult(user.Id, user.Name, user.Email, user.PhoneNumber, accountResults);
+            User = new UserResult(user.Id, user.Name, user.Email, user.PhoneNumber, accountResults,new());
         }
     }
 }

@@ -31,9 +31,9 @@ namespace App.Domains.Wallets
             UserId = userId;
         }
 
-        public void FundWallet(Amount amount)
+        public void FundWallet(Amount amount,string marchantrefence)
         {
-            Credit credit = new Credit(Id, amount);
+            Credit credit = new(Id, amount,marchantrefence);
             _transactions.Add(credit);
         }
 
@@ -41,7 +41,7 @@ namespace App.Domains.Wallets
         {
             if (_transactions.GetCurrentBalance() < amount)
                 throw new InsuficientFundsException($"Insufficient fund ({amount})");
-            Debit debit = new Debit(Id, amount, narration);
+            Debit debit = new(Id, amount, narration);
             _transactions.Add(debit);
         }
 

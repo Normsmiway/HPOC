@@ -7,7 +7,7 @@ namespace App.Domains.ValueObjects
     {
         public Guid Id { get; set; }
         public string Text { get; private set; }
-        const string RegexForValidation = "^[A-Z]{3}[0-9]{6,9}";
+        const string RegexForValidation = "^[A-Z]{3}[0-9]{3,9}";
 
 
         public WalletNumber(string text)
@@ -17,7 +17,7 @@ namespace App.Domains.ValueObjects
 
 
             if (!Regex.IsMatch(text, RegexForValidation))
-                throw new InvalidWalletNumberException("Invalid wallet number format. Use XXX000000 format");
+                throw new InvalidWalletNumberException("Invalid wallet number format. Use XXX000 format");
             Id = Guid.NewGuid();
             Text = text;
 

@@ -15,7 +15,7 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
         {
             _queries = queries;
         }
-        [HttpGet("details/{walletId}", Name = "GetWalletDetails")]
+        [HttpGet("details/walletId/{walletId}", Name = "GetWalletDetails")]
         public async Task<IActionResult> GetWalletDetails(Guid walletId)
         {
             var wallet = await _queries.GetWalletAsync(walletId);
@@ -24,7 +24,7 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
             return GetWalletDetails(wallet, transactions);
         }
 
-        [HttpGet("details/by-number/{walletNumber}", Name = "GetWalletDetailsByNumber")]
+        [HttpGet("details/{walletNumber}", Name = "GetWalletDetailsByNumber")]
         public async Task<IActionResult> GetWalletDetailsByNumber(string walletNumber)
         {
             var wallet = await _queries.GetWalletAsync(walletNumber);
@@ -41,7 +41,7 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
                 var transaction = new TransactionModel(
                     item.Amount, item.TranactionType,
                     item.TransactionDate, item.Narration,
-                    item.Reference);
+                    item.Reference,item.MarchantReference);
 
                 transactions.Add(transaction);
             }

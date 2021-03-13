@@ -10,19 +10,22 @@ namespace App.Applications.Results
         public string Narration { get; }
         public string Reference { get; }
         public string Currency { get; }
+        public string MarchantReference { get; }
         public TransactionResult(
             string transactionType,
             decimal amount,
             DateTime transactionDate,
             string currency,
             string narration,
-            string reference)
+            string reference,
+            string marchantReference)
         {
             TranactionType = transactionType;
             Amount = amount;
             TransactionDate = transactionDate;
             Currency = currency;
             Reference = reference ?? string.Empty;
+            MarchantReference = marchantReference ?? string.Empty;
             Narration = narration ?? string.Empty;
         }
     }

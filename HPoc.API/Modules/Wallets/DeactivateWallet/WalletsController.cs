@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace HPoc.API.Modules.Wallets.CloseWallet
 {
+    [ApiExplorerSettings(IgnoreApi = true)]
     public sealed class WalletsController : BaseController
     {
         private readonly IDeactivateAccount _service;
@@ -16,7 +17,7 @@ namespace HPoc.API.Modules.Wallets.CloseWallet
         public async Task<IActionResult> CloseWallet(Guid walletId)
         {
             Guid deactivateResult = await _service.Execute(walletId);
-            if (deactivateResult==Guid.Empty)
+            if (deactivateResult == Guid.Empty)
             {
                 return new NoContentResult();
             }

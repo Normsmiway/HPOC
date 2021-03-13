@@ -38,7 +38,7 @@ namespace App.Applications.UseCases.Transfer
                 throw new InvalidTransferException();
             }
             var withrawalResult = await _withdrawal.Execute(sendingWalletId, amount, narration);
-          
+
             if (withrawalResult is not null)
             {
 
@@ -46,7 +46,8 @@ namespace App.Applications.UseCases.Transfer
                 _ = Guid.TryParse(sendingWallet?.UserId, out Guid senderUsrId);
                 var sender = await GetUser(senderUsrId);
 
-                var fundResult = await _funding.Execute(recievingWalletId, amount);
+                var fundResult = await _funding.Execute(recievingWalletId, amount,
+                    withrawalResult.Transaction.MarchantReference);
 
 
                 _ = Guid.TryParse(receivingWallet?.UserId, out Guid usrId);
@@ -54,7 +55,8 @@ namespace App.Applications.UseCases.Transfer
 
                 return new FundTransferResult(
                     new Debit(sendingWallet.WalletId, amount, narration),
-                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount),
+                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount,
+                    withrawalResult.Transaction.MarchantReference),
                     sender.Name,
                     withrawalResult.Transaction.Currency,
                     receiver.Name,
@@ -75,7 +77,7 @@ namespace App.Applications.UseCases.Transfer
                 throw new InvalidTransferException();
             }
             var withrawalResult = await _withdrawal.Execute(sendingWalletNumber, amount, narration);
-
+            // withrawalResult.Transaction.Reference;
             if (withrawalResult is not null)
             {
 
@@ -83,7 +85,8 @@ namespace App.Applications.UseCases.Transfer
                 _ = Guid.TryParse(sendingWallet?.UserId, out Guid senderUsrId);
                 var sender = await GetUser(senderUsrId);
 
-                var fundResult = await _funding.Execute(recievingWalletNumber, amount);
+                var fundResult = await _funding.Execute(recievingWalletNumber, amount,
+                    withrawalResult.Transaction.MarchantReference);
 
 
                 _ = Guid.TryParse(receivingWallet?.UserId, out Guid usrId);
@@ -91,7 +94,8 @@ namespace App.Applications.UseCases.Transfer
 
                 return new FundTransferResult(
                     new Debit(sendingWallet.WalletId, amount, narration),
-                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount),
+                    new Credit(receivingWallet.WalletId, fundResult.Transaction.Amount,
+                    withrawalResult.Transaction.MarchantReference),
                     sender.Name,
                     withrawalResult.Transaction.Currency,
                     receiver.Name,
@@ -114,7 +118,7 @@ namespace App.Applications.UseCases.Transfer
         }
         private async Task<UserResult> GetUser(Guid usrId)
         {
-            var user = await _userQueries.GetUser(usrId);
+            var user = await _userQueries.GetUserAsync(usrId);
             return user;
         }
         #endregion

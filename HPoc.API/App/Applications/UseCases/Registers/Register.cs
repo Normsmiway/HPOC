@@ -22,11 +22,11 @@ namespace App.Applications.UseCases.Registers
         }
         public async Task<RegisterResult> Execute(string name, string email, string phoneNumber, DateTime dateOfBirth, decimal intialAmount)
         {
-            User user = new User(name, email, phoneNumber);
+            User user = new(name, email, phoneNumber);
             string number = await _numberHandler.GenerateAsync();
-            Wallet wallet = new Wallet(user.Id.ToString(), number, "Default", "NGN");
+            Wallet wallet = new(user.Id.ToString(), number, "Default", "NGN");
 
-            wallet.FundWallet(intialAmount);
+            wallet.FundWallet(intialAmount, Guid.NewGuid().ToString().ToUpperInvariant());
             Credit credit = (Credit)wallet.GetLastTransaction();
 
             user.Register(wallet.Id);

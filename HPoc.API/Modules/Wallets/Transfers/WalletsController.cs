@@ -12,7 +12,8 @@ namespace HPoc.API.Modules.Wallets.Transfers
         {
             _fundTransfer = fundTransfer;
         }
-        [HttpPost("transfer", Name = nameof(TransferFund))]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [HttpPost("transfer/walletId", Name = nameof(TransferFund))]
         public async Task<IActionResult> TransferFund([FromBody] FundTransferRequest request)
         {
             try
@@ -32,7 +33,7 @@ namespace HPoc.API.Modules.Wallets.Transfers
         }
 
 
-        [HttpPost("transfer/by-number", Name = nameof(TransferFundByNumber))]
+        [HttpPost("transfer", Name = nameof(TransferFundByNumber))]
         public async Task<IActionResult> TransferFundByNumber([FromBody] FundTransferbyNumberRequest request)
         {
             try

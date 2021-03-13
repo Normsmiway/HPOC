@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Applications.Results;
+using System;
 using System.Collections.Generic;
 
 namespace HPoc.API.Modules.Models
@@ -41,9 +42,12 @@ namespace HPoc.API.Modules.Models
         public string Name { get; }
         public DateTime DateOfBirth { get; }
         public List<WalletDetailsModel> Wallets { get; }
+        public List<UserDetails> Beneficiaries { get; }
 
         public UserDetailsModel(Guid userId,string phone,
-            string email,string name,DateTime dateOfBirth,List<WalletDetailsModel> wallets)
+            string email,string name,DateTime dateOfBirth,
+            List<WalletDetailsModel> wallets,
+            List<UserDetails> beneficiaries) 
         {
             UserId = userId;
             PhoneNumber = phone;
@@ -51,6 +55,7 @@ namespace HPoc.API.Modules.Models
             Name = name;
             DateOfBirth = dateOfBirth;
             Wallets = wallets;
+            Beneficiaries=beneficiaries;
         }
     }
 }

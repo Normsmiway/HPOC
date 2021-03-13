@@ -17,7 +17,8 @@ namespace App.Applications.UseCases.FundWallets
                 credit.TransactionDate,
                 currency,
                 credit.Narration,
-                credit.Reference);
+                credit.Reference,
+                credit.MarchantRefence);
 
             CurrentBalace = balance;
         }

@@ -14,29 +14,29 @@ namespace App.Applications.UseCases.FundWallets
             _store = store;
         }
 
-        public async Task<FundingResult> Execute(Guid walletId, Amount amount)
+        public async Task<FundingResult> Execute(Guid walletId, Amount amount, string marchantReference)
         {
             Wallet wallet = await _store.Get(walletId);
-            return await GetFundingResult(amount, wallet);
+            return await GetFundingResult(amount, wallet, marchantReference);
         }
 
 
 
-        public async Task<FundingResult> Execute(string walletNumber, Amount amount)
+        public async Task<FundingResult> Execute(string walletNumber, Amount amount, string marchantReference)
         {
             Wallet wallet = await _store.Get(walletNumber);
 
-            return await GetFundingResult(amount, wallet);
+            return await GetFundingResult(amount, wallet, marchantReference);
         }
 
 
         #region private helper method
-        private async Task<FundingResult> GetFundingResult(Amount amount, Wallet wallet)
+        private async Task<FundingResult> GetFundingResult(Amount amount, Wallet wallet, string marchantReference)
         {
             if (wallet is null)
                 throw new WalletNotFoundException("Wallet not found");
 
-            wallet.FundWallet(amount);
+            wallet.FundWallet(amount, marchantReference);
 
             Credit credit = (Credit)wallet.GetLastTransaction();
 

@@ -10,6 +10,7 @@
         DateTime TransactionDate { get; }
         string Reference { get; }
         string Narration { get; }
+        string MarchantRefence { get; }
     }
 
 

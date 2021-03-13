@@ -1,5 +1,4 @@
 ﻿using App.Applications.Results;
-using App.Domains.ValueObjects;
 using App.Domains.Wallets;
 
 namespace App.Applications.UseCases.Transfer
@@ -19,7 +18,7 @@ namespace App.Applications.UseCases.Transfer
                 debit.TransactionDate,
                 currencyCode,
                 credit.Narration,
-                debit.Reference);
+                debit.Reference,debit.MarchantRefence);
             ReceiverWalletNumber = receiverWalletNumber;
             ReceiverName = recieverName;
             From = from;

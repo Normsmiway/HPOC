@@ -12,7 +12,7 @@ namespace App.Domains.Wallets
         public string Reference { get; private init; }
         public string Narration { get; private init; }
         public string TransactionType { get { return nameof(Debit); } }
-
+        public string MarchantRefence { get; }
 
         private Debit() { }
 
@@ -38,6 +38,7 @@ namespace App.Domains.Wallets
             TransactionDate = DateTime.UtcNow;
             Narration = narration;
             Reference = Guid.NewGuid().ToString();
+            MarchantRefence = Guid.NewGuid().ToString().ToUpperInvariant();
         }
     }
 }

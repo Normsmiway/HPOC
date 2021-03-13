@@ -1,9 +1,11 @@
 ﻿using App.Applications.Results;
 using App.Applications.UseCases.GetUsers;
+using App.Domains.Wallets;
 using HPoc.API.Modules.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace HPoc.API.Modules.Users.Enquiry
@@ -22,18 +24,24 @@ namespace HPoc.API.Modules.Users.Enquiry
         public async Task<IActionResult> GetUsers()
         {
             List<UserDetailsModel> usersDetails = new();
-            var users = await _queries.GetUsers();
+            var users = await _queries.GetUsersAsync();
             users.ForEach(user =>
             {
                 usersDetails.Add(GetUserDetails(user));
             });
             return Ok(usersDetails);
         }
+        [HttpGet("details/walletNumer/{walletNumer}", Name = "GetWalletOwnder")]
+        public async Task<IActionResult> GetWalletOwnder(string walletNumer)
+        {
 
+            var ownser = await _queries.GetUserDetailsAsync(walletNumer);
+            return Ok(ownser);
+        }
         [HttpGet("details/{userId}", Name = "GetUserDetails")]
         public async Task<IActionResult> GetUser(Guid userId)
         {
-            var user = await _queries.GetUser(userId);
+            var user = await _queries.GetUserAsync(userId);
 
             if (user is null) { return new NoContentResult(); }
 
@@ -46,18 +54,23 @@ namespace HPoc.API.Modules.Users.Enquiry
         private static UserDetailsModel GetUserDetails(UserResult user)
         {
             List<WalletDetailsModel> wallets = new();
-
             foreach (var wallet in user.WalletResults)
             {
                 List<TransactionModel> transactions = new();
 
                 foreach (var item in wallet.Transactions)
                 {
+                    if (item.TranactionType == nameof(Debit))
+                    {
+                        var benref = item.MarchantReference;
+                    }
+
                     var transaction = new TransactionModel(
                         item.Amount, item.TranactionType,
                         item.TransactionDate,
                         item.Narration,
-                        item.Reference);
+                        item.Reference,
+                        item.MarchantReference);
                     transactions.Add(transaction);
                 }
                 wallets.Add(new WalletDetailsModel(
@@ -70,6 +83,7 @@ namespace HPoc.API.Modules.Users.Enquiry
                     wallet.WalletType,
                     transactions));
             }
+           
 
             UserDetailsModel model = new(
                 user.UserId,
@@ -77,7 +91,8 @@ namespace HPoc.API.Modules.Users.Enquiry
                 user.Email,
                 user.Name,
                 DateTime.Today.AddYears(-18),
-                wallets);
+                wallets,
+                user.Beneficiaries.ToList());
             return model;
         }
         #endregion

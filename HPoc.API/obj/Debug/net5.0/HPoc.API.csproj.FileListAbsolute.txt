@@ -56,3 +56,4 @@ C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\ne
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.csproj.CopyComplete
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.genruntimeconfig.cache
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Debug\net5.0\HPoc.API.csprojAssemblyReference.cache

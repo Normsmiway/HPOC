@@ -17,7 +17,8 @@ namespace App.Applications.UseCases.Withdrawal
                 debit.TransactionDate,
                 currencyCode,
                 debit.Narration,
-                debit.Reference);
+                debit.Reference,
+                debit.MarchantRefence);
 
             CurrentBalace = balance;
         }

@@ -12,7 +12,8 @@ namespace HPoc.API.Modules.Wallets.Withdrawal
         {
             _withdrawal = withdrawal;
         }
-        [HttpPost("withrawfund", Name = nameof(WithrawFund))]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [HttpPost("withrawfund/walletId", Name = nameof(WithrawFund))]
         public async Task<IActionResult> WithrawFund([FromBody] WithdrawalFundRequest request)
         {
             var result = await _withdrawal.Execute(request.WalletId, request.Amount, request.Narration);
@@ -20,7 +21,7 @@ namespace HPoc.API.Modules.Wallets.Withdrawal
             return GetWithrawalResult(result);
         }
 
-        [HttpPost("withrawfund/by-number", Name = nameof(WithrawFundByNumber))]
+        [HttpPost("withrawfund", Name = nameof(WithrawFundByNumber))]
         public async Task<IActionResult> WithrawFundByNumber([FromBody] WithdrawalByNumberFundRequest request)
         {
             var result = await _withdrawal.Execute(request.WalletNumber, request.Amount, request.Narration);

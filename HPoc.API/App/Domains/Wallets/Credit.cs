@@ -12,7 +12,7 @@ namespace App.Domains.Wallets
         public string Reference { get;  init; }
         public string TransactionType { get { return nameof(Credit); } }
         public string Narration { get { return $"Creditd {Amount} into wallet"; }} 
-
+        public string  MarchantRefence { get; }
         private Credit() { }
 
         public static Credit Load(Guid id, Guid walletId, Amount amount, DateTime transactionDate,
@@ -28,13 +28,14 @@ namespace App.Domains.Wallets
             };
         }
 
-        public Credit(Guid walletId,Amount amount)
+        public Credit(Guid walletId,Amount amount,string marchantRefence)
         {
             Id = Guid.NewGuid();
             WalletId = walletId;
             Amount = amount;
             TransactionDate = DateTime.UtcNow;
             Reference = Guid.NewGuid().ToString();
+            MarchantRefence = marchantRefence;
         }
     }
 }

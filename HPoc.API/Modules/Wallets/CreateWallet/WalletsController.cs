@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace HPoc.API.Modules.Wallets.CreateWallet
 {
-
+    [ApiExplorerSettings(IgnoreApi = true)]
     public sealed class WalletsController : BaseController
     {
         [HttpPost("create", Name = "NewWallet")]

@@ -33,7 +33,7 @@ namespace App.Applications.UseCases.GetWallets
 
 
 
-        private async Task<WalletResult> GetAsync(Wallet wallet)
+        private static async Task<WalletResult> GetAsync(Wallet wallet)
         {
             if (wallet is null)
                 throw new WalletNotFoundException("Wallet not found");
@@ -52,19 +52,32 @@ namespace App.Applications.UseCases.GetWallets
 
             foreach (Credit t in credits)
             {
-                TransactionResult transactionResult = new(t.TransactionType, t.Amount, t.TransactionDate, wallet.CurrencyCode, t.Narration, t.Reference);
+                TransactionResult transactionResult = new(
+                    t.TransactionType,
+                    t.Amount,
+                    t.TransactionDate,
+                    wallet.CurrencyCode,
+                    t.Narration,
+                    t.Reference,
+                    t.MarchantRefence);
                 transactionResults.Add(transactionResult);
             }
 
             foreach (Debit t in debits)
             {
                 TransactionResult transactionResult = new(
-                    t.TransactionType, t.Amount, t.TransactionDate, wallet.CurrencyCode, t.Narration, t.Reference);
+                    t.TransactionType,
+                    t.Amount,
+                    t.TransactionDate,
+                    wallet.CurrencyCode,
+                    t.Narration,
+                    t.Reference,
+                    t.MarchantRefence);
                 transactionResults.Add(transactionResult);
             }
 
             List<TransactionResult> orderedTransactionResult = transactionResults
-                .OrderBy(t => t.TransactionDate).ToList();
+                .OrderByDescending(t => t.TransactionDate).ToList();
 
             WalletResult walletResult = new(wallet.Id,
                 wallet.CurrencyCode,

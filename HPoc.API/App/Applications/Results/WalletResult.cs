@@ -55,7 +55,7 @@ namespace  App.Applications.Results
                 var transactionResult = new TransactionResult(transaction.TransactionType,
                     transaction.Amount, transaction.TransactionDate,wallet.CurrencyCode,
                     transaction.Narration,
-                    transaction.Reference);
+                    transaction.Reference,transaction.MarchantRefence);
 
                 transactionResults.Add(transactionResult);
             });
