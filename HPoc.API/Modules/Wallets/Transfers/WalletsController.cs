@@ -26,7 +26,7 @@ namespace HPoc.API.Modules.Wallets.Transfers
             }
             catch (System.Exception ex)
             {
-                return new NotFoundResult();
+                throw;
             }
 
         }

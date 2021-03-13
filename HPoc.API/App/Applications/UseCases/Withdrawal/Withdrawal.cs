@@ -27,7 +27,7 @@ namespace App.Applications.UseCases.Withdrawal
             await _store.Update(wallet, debit);
 
             return new WithdrawalResult(
-                debit, wallet.GetWalletBalance());
+                debit, wallet.GetWalletBalance(), wallet.CurrencyCode);
         }
     }
 }

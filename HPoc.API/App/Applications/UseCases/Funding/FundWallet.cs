@@ -13,7 +13,7 @@ namespace App.Applications.UseCases.FundWallets
         {
             _store = store;
         }
-       
+
         public async Task<FundingResult> Execute(Guid walletId, Amount amount)
         {
             Wallet wallet = await _store.Get(walletId);
@@ -26,7 +26,7 @@ namespace App.Applications.UseCases.FundWallets
 
             await _store.Update(wallet, credit);
 
-            return new FundingResult(credit, wallet.GetWalletBalance());
+            return new FundingResult(credit, wallet.GetWalletBalance(), wallet.CurrencyCode);
         }
     }
 }

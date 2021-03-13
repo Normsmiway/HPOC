@@ -9,12 +9,13 @@ namespace App.Applications.UseCases.FundWallets
         
         public TransactionResult Transaction { get; }
         public decimal CurrentBalace { get; }
-        public FundingResult(Credit credit, Amount balance )
+        public FundingResult(Credit credit, Amount balance,string currency )
         {
             Transaction = new TransactionResult(
                 credit.TransactionType,
                 credit.Amount,
                 credit.TransactionDate,
+                currency,
                 credit.Narration,
                 credit.Reference);
 

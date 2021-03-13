@@ -9,10 +9,12 @@ using App.Applications.UseCases.Withdrawal;
 using App.Applications.WalletNumbers;
 using App.Domains;
 using App.Infrastructure.InMemoryStore;
+using HPoc.API.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
 namespace HPoc.API
@@ -37,6 +39,12 @@ namespace HPoc.API
                     builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader());
+            });
+
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(typeof(DomainExceptionFilter));
+                options.Filters.Add(typeof(ValidateModelAttribute));
             });
 
             services.AddSingleton<Context>();
@@ -65,12 +73,18 @@ namespace HPoc.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //if (env.IsDevelopment())
-            //{
-            app.UseDeveloperExceptionPage();
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HPoc.API v1"));
-            //   }
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HPoc.API v1"));
+            }
+            else
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("../swagger/v1/swagger.json", "HPoc.API v1"));
+            }
 
             app.UseHttpsRedirection();
             app.UseCors("CorsPolicy");

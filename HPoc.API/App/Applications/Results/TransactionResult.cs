@@ -9,14 +9,19 @@ namespace App.Applications.Results
         public DateTime TransactionDate { get; }
         public string Narration { get; }
         public string Reference { get; }
-
-        public TransactionResult(string transactionType,
-            decimal amount,DateTime transactionDate,
-            string narration,string reference)
+        public string Currency { get; }
+        public TransactionResult(
+            string transactionType,
+            decimal amount,
+            DateTime transactionDate,
+            string currency,
+            string narration,
+            string reference)
         {
             TranactionType = transactionType;
             Amount = amount;
             TransactionDate = transactionDate;
+            Currency = currency;
             Reference = reference ?? string.Empty;
             Narration = narration ?? string.Empty;
         }

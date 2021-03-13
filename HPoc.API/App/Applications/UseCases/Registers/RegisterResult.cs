@@ -12,7 +12,7 @@ namespace App.Applications.UseCases.Registers
 
         public RegisterResult(User user, Wallet wallet)
         {
-            List<TransactionResult> transactionResults = new List<TransactionResult>();
+            List<TransactionResult> transactionResults = new();
 
             foreach (ITransaction transaction in wallet.GetWalletTransactions())
             {
@@ -21,14 +21,22 @@ namespace App.Applications.UseCases.Registers
                         transaction.TransactionType,
                         transaction.Amount,
                         transaction.TransactionDate,
+                        wallet.CurrencyCode,
                         transaction.Narration,
                         transaction.Reference));
             }
 
-            Wallet = new WalletResult(wallet.Id, wallet.CurrencyCode, wallet.WalletType, wallet.GetWalletBalance(),
-                wallet.GetTotalIcome(), wallet.GetTotalExpenses(), wallet.WalletNumber, transactionResults);
+            Wallet = new WalletResult(wallet.Id,
+                wallet.CurrencyCode,
+                wallet.WalletType,
+                wallet.GetWalletBalance(),
+                wallet.GetTotalIcome(),
+                wallet.GetTotalExpenses(),
+                wallet.WalletNumber,
+                wallet.UserId,
+                transactionResults);
 
-            List<WalletResult> accountResults = new List<WalletResult>
+            List<WalletResult> accountResults = new()
             {
                 Wallet
             };

@@ -15,7 +15,7 @@ namespace  App.Applications.Results
         public string WalletNumber { get; }
 
         public string WalletType { get;  }
-
+        public string UserId { get; }
         public List<TransactionResult> Transactions { get; }
 
         public WalletResult(Guid walletId, 
@@ -25,6 +25,7 @@ namespace  App.Applications.Results
             decimal totalIncome,
             decimal totalExpenses, 
             string walletNumber, 
+            string userId,
             List<TransactionResult> transactions)
         {
             WalletId = walletId;
@@ -35,6 +36,7 @@ namespace  App.Applications.Results
             TotalExpenses = totalExpenses;
             WalletNumber = walletNumber;
             Transactions = transactions;
+            UserId = userId;
         }
 
         public WalletResult(Wallet wallet)
@@ -47,11 +49,11 @@ namespace  App.Applications.Results
             CurrencyCode =wallet.CurrencyCode;
             WalletType =wallet.WalletType;
 
-            List<TransactionResult> transactionResults = new List<TransactionResult>();
+            List<TransactionResult> transactionResults = new();
             wallet.GetWalletTransactions(10).ToList().ForEach(transaction =>
             {
                 var transactionResult = new TransactionResult(transaction.TransactionType,
-                    transaction.Amount, transaction.TransactionDate,
+                    transaction.Amount, transaction.TransactionDate,wallet.CurrencyCode,
                     transaction.Narration,
                     transaction.Reference);
 

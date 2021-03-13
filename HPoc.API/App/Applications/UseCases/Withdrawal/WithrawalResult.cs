@@ -9,12 +9,13 @@ namespace App.Applications.UseCases.Withdrawal
 
         public TransactionResult Transaction { get; }
         public decimal CurrentBalace { get; }
-        public WithdrawalResult(Debit debit, Amount balance)
+        public WithdrawalResult(Debit debit, Amount balance,string currencyCode)
         {
             Transaction = new TransactionResult(
                 debit.TransactionType,
                 debit.Amount,
                 debit.TransactionDate,
+                currencyCode,
                 debit.Narration,
                 debit.Reference);
 

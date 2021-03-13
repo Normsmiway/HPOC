@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tBcj5BLLQ9gQOHDuzXkAKXFTk0igmtwc9xx39+JJWBQR4L3xHYgbZ0FOpAc/X/RAe2qhzYugUCvwMEGrOoThIg==",
+  "dgSpecHash": "iBnB166maWMmDM2S8Zv/wfqA5eF+XDvn/Xy7nuLBKUr+/6uew7tXkThLMcSuIFxAbWex40No2LazD3LHUD4U5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Surface\\Documents\\Clients\\HalalPay\\HPoc\\HPoc\\hpoc\\HPoc.API\\HPoc.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Surface\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Surface\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Surface\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
