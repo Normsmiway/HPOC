@@ -29,18 +29,25 @@ namespace App.Applications.UseCases.Transfer
         }
         public async Task<FundTransferResult> Execute(Guid sendingWalletId, Guid recievingWalletId, Amount amount, string narration)
         {
+            //Ensure both debit and credit accoount exits
+            var sendingWallet = await GetWallet(sendingWalletId);
+            var receivingWallet = await GetWallet(recievingWalletId);
 
+            if (sendingWalletId.Equals(recievingWalletId))
+            {
+                throw new InvalidTransferException();
+            }
             var withrawalResult = await _withdrawal.Execute(sendingWalletId, amount, narration);
             if (withrawalResult is not null)
             {
-                var sendingWallet = await GetWalletUserId(sendingWalletId);
+
 
                 _ = Guid.TryParse(sendingWallet?.UserId, out Guid senderUsrId);
                 var sender = await GetUser(senderUsrId);
 
                 var fundResult = await _funding.Execute(recievingWalletId, amount);
 
-                var receivingWallet = await GetWalletUserId(recievingWalletId);
+
                 _ = Guid.TryParse(receivingWallet?.UserId, out Guid usrId);
                 var receiver = await GetUser(usrId);
 
@@ -56,7 +63,7 @@ namespace App.Applications.UseCases.Transfer
             return default;
         }
 
-        private async Task<WalletResult> GetWalletUserId(Guid walletId)
+        private async Task<WalletResult> GetWallet(Guid walletId)
         {
             var wallet = await _walletQueries.GetWalletAsync(walletId);
             return wallet;
@@ -64,7 +71,7 @@ namespace App.Applications.UseCases.Transfer
 
         private async Task<UserResult> GetUser(Guid usrId)
         {
-            var user= await _userQueries.GetUser(usrId);
+            var user = await _userQueries.GetUser(usrId);
             return user;
         }
     }
