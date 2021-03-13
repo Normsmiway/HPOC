@@ -30,6 +30,15 @@ namespace App.Infrastructure.InMemoryStore
 
             return await Task.FromResult<Wallet>(wallet);
         }
+
+        public async Task<Wallet> Get(string walletNumber)
+        {
+            Wallet wallet = _context.Wallets
+                .Where(w => w.WalletNumber == walletNumber)
+                .SingleOrDefault();
+
+            return await Task.FromResult<Wallet>(wallet);
+        }
         public Task Update(Wallet wallet, Credit credit)
         {
             {

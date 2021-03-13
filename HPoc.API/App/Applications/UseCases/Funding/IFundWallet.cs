@@ -7,5 +7,6 @@ namespace App.Applications.UseCases.FundWallets
     public interface IFundWallet
     {
         Task<FundingResult> Execute(Guid walletId, Amount amount);
+        Task<FundingResult> Execute(string walletNumber, Amount amount);
     }
 }
