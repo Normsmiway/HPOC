@@ -1,0 +1,100 @@
+﻿@page "/dashboard"
+@using System.Net.Http.Json
+@inject HttpClient httpClient
+
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="9">
+            <MudPaper Elevation="2" Class="pa-4">
+                <UserDetail Model="@Profile" />
+               <WalletEnquiry />
+                <MudText Align="Align.Center" Typo="Typo.caption">Wallet Balance</MudText>
+                <MudGrid>
+                    @foreach (var mod in MoneyModels)
+                    {
+                        <MudItem xs="12" sm="6" md="4">
+                            <MudPaper Elevation="2" Class="" Style="height: 100px;">
+                                <Money Model="mod" />
+                            </MudPaper>
+                        </MudItem>
+                    }
+                </MudGrid>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="3">
+            @*Class="pa-4 mud-theme-dark"*@
+            <MudPaper  Elevation="2" Class="pa-4 mud-theme-dark" >
+                <MudText  Typo="Typo.h6"></MudText>
+                <MudButton OnClick="(async()=>await UpdateUI())" >Refresh</MudButton>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudPaper Elevation="2" Class="pa-4" Style="height: 170px;">
+                        @foreach (var beneficiary in Beneficiaries)
+                        {
+                            <UserAvatar Name="@beneficiary.Name" />
+
+                        }
+                    </MudPaper>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudPaper Elevation="2" Class="pa-4">
+                        <Transfer SenderWalletNumber="@Profile.WalletNumber" Narration="@Narrattion" />
+                      
+                    </MudPaper>
+                </MudItem>
+            </MudGrid>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudPaper Elevation="2" Class="pa-4 mud-theme-secondary" Style="height: 100%">
+                <MudTable ServerData="@(new Func<TableState, Task<TableData<TransactionResult>>>(ServerReload))"
+                          Dense="true" Hover="true" @ref="table">
+                    <ToolBarContent>
+                        <MudText Typo="Typo.h6">Transaction History</MudText>
+                        <MudToolBarSpacer />
+                        <MudTextField T="string" ValueChanged="@(s=>OnSearch(s))" Placeholder="Search" Adornment="Adornment.Start"
+                                      AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+                    </ToolBarContent>
+                    <HeaderContent>
+                        <MudTh><MudTableSortLabel SortLabel="nr_field" T="TransactionResult">S/N</MudTableSortLabel></MudTh>
+                        <MudTh><MudTableSortLabel SortLabel="sign_field" T="TransactionResult">Amount</MudTableSortLabel></MudTh>
+                        <MudTh><MudTableSortLabel SortLabel="name_field" T="TransactionResult">TranactionType</MudTableSortLabel></MudTh>
+                        <MudTh><MudTableSortLabel SortLabel="position_field" T="TransactionResult">Narration</MudTableSortLabel></MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Nr">@context.Number</MudTd>
+                        <MudTd DataLabel="Sign">@context.Amount</MudTd>
+                        <MudTd DataLabel="Name">@context.TranactionType</MudTd>
+                        <MudTd DataLabel="Position">@context.Narration</MudTd>
+                    </RowTemplate>
+                    <PagerContent>
+                        <MudTablePager />
+                    </PagerContent>
+                </MudTable>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="4">
+            <MudPaper Elevation="2" Class="pa-4" Style="height: 200px;"></MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+
+
+@code {
+
+
+
+    /// <summary>
+    /// Here we simulate getting the paged, filtered and ordered data from the server
+    /// </summary>
+
+}

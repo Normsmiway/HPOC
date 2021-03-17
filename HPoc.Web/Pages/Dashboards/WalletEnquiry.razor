@@ -1,0 +1,45 @@
+﻿<MudItem xs="12" sm="6" md="12">
+    <MudCard Elevation="0" Class="rounded-lg">
+        @*<MudCardHeader>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5" Align="Align.Center">Transfer to: @Model.WalletNumber</MudText>
+            </CardHeaderContent>
+        </MudCardHeader>*@
+        <MudCardContent>
+            <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+                <DataAnnotationsValidator />
+                <MudCard Elevation="0">
+                    <MudCardContent>
+                        <MudTextField Label="Receiver Wallet Id" HelperText="@walletUserName" OnKeyPress="MakeEnquiry" OnKeyUp="(async ()=>await KeyUp())"
+                                      @bind-Value="Model.WalletNumber" For="@(() => Model.WalletNumber)"
+                                      Validation="@walletNumberValidator.Validation"
+                                      Immediate="true" />
+                    </MudCardContent>
+
+                    <MudCardActions>
+
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary"
+                                   Size="Size.Large" Class="ml-auto" Style="width:50%;">Submit</MudButton>
+                    </MudCardActions>
+
+
+                </MudCard>
+
+                <MudExpansionPanels>
+                    <MudExpansionPanel Text="Show Validation Summary">
+                        @if (success)
+                        {
+                            <MudText Color="Color.Success">Success</MudText>
+                        }
+                        else
+                        {
+                            <MudText Color="@Color.Error">
+                                <ValidationSummary />
+                            </MudText>
+                        }
+                    </MudExpansionPanel>
+                </MudExpansionPanels>
+            </EditForm>
+        </MudCardContent>
+    </MudCard>
+</MudItem>

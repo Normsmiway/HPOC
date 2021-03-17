@@ -13,7 +13,7 @@ namespace App.Domains
         TEntity Get(TId id);
         Task<TEntity> GetAsync(TId id);
 
-        IQueryable<TEntity> Get(Expression<Func<TEntity, bool>> predicate);
+        IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
         Task<IQueryable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate);
         IEnumerable<TEntity> GetAll();
         Task<IEnumerable<TEntity>> GetAllAsync();

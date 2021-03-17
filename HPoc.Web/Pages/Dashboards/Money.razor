@@ -1,0 +1,12 @@
+﻿
+<MudGrid Class="mt-4">
+    <MudItem xs="12" sm="12" md="2"  >
+        <MudProgressCircular Color="Color.Primary" Value="@Model.Percentage" Maximum="100" 
+                             Style="height:60px; width:60px;" Class="ma-2"/>
+    </MudItem>
+    <MudItem xs="12" sm="6" md="6">
+            <MudText GutterBottom="true" Align="Align.Center"><b></b></MudText>
+            <MudText  GutterBottom="true" Align="Align.Center"><b>@Model.Text</b></MudText>
+            <MudText Align="Align.Center" Typo="Typo.caption" Style="margin-left:27px">₦ @Model.Value.ToString("0,0.00")</MudText>
+    </MudItem>
+</MudGrid>

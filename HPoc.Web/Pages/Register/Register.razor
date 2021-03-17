@@ -1,0 +1,73 @@
+﻿@page "/register"
+@layout EmptyLayout
+
+<MudItem xs="12" sm="6" md="4">
+    <MudCard Elevation="25" Class="rounded-lg pb-4">
+        <MudCardHeader>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5" Align="Align.Center">Create Wallet Account</MudText>
+                <MudText Align="Align.Center">Already have an account? <MudLink Href="/" Underline="Underline.Always">Login</MudLink></MudText>
+            </CardHeaderContent>
+        </MudCardHeader> <EditForm Model="@model" OnValidSubmit="OnValidSubmit">
+            <MudCardContent>
+
+                <DataAnnotationsValidator />
+                <MudCard>
+                    <MudCardContent>
+                        @if (!string.IsNullOrEmpty(walletNumber))
+                        {
+                            <MudAlert Severity="Severity.Success">Your wallet number is: @walletNumber</MudAlert>
+                        }
+                        <MudText Align="Align.Center">
+                            @foreach (var amount in initialAmounts)
+                            {
+                                <MudChip Style="color:coral;" OnClick="args=> { InitializeAmount(amount); }">@currencyIcon @amount</MudChip>
+                            }
+                        </MudText>
+
+                        <MudTextField @bind-Value="@formatAmount" Label="Set Amount Initial Amount" Variant="Variant.Outlined"
+                                      Adornment="Adornment.Start" AdornmentText="@currencyIcon" InputType="InputType.Text"
+                                      Culture="@CultureInfo.InvariantCulture"
+                                      AdornmentColor="Color.Warning" Style="color:coral; font-weight:500" OnBlur="args=> { FormatAmount(formatAmount); }" />
+
+                        <MudTextField HelperText="Max. 8 characters " @bind-Value="model.Name"
+                                      For="@(() => model.Name)" Label="Full Name" Variant="Variant.Outlined" />
+
+                        <MudTextField @bind-Value="model.Email" Label="Email" Class="mt-3"
+                                      For="@(() => model.Email)" Variant="Variant.Outlined" />
+
+                        <MudTextField @bind-Value="model.PhoneNumber"
+                                      For="@(() => model.PhoneNumber)" Label="Phone Number" Variant="Variant.Outlined" />
+
+
+                    </MudCardContent>
+                </MudCard>
+                <MudText Typo="Typo.body2" Align="Align.Center" Class="my-4">
+
+                </MudText>
+
+                <MudExpansionPanels>
+                    <MudExpansionPanel Text="Show Validation Summary">
+                        @if (success)
+                        {
+                            <MudText Color="Color.Success">Success</MudText>
+                        }
+                        else
+                        {
+                            <MudText Color="@Color.Error">
+                                <ValidationSummary />
+                            </MudText>
+                        }
+                    </MudExpansionPanel>
+                </MudExpansionPanels>
+
+
+            </MudCardContent>
+
+            <MudCardActions Class="d-flex justify-center">
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled"
+                           Color="Color.Primary" Size="Size.Large" Style="width:50%;">Create Account</MudButton>
+            </MudCardActions>
+        </EditForm>
+    </MudCard>
+</MudItem>

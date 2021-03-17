@@ -27,3 +27,4 @@ C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\ref\HPoc.API.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\HPoc.API.pdb
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\HPoc.API.genruntimeconfig.cache
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\bin\Release\net5.0\Newtonsoft.Json.dll

@@ -47,7 +47,7 @@ namespace HPoc.API
                 options.Filters.Add(typeof(ValidateModelAttribute));
             });
 
-            services.AddSingleton<Context>();
+            services.AddSingleton(c => { return new Context(); });
             services.AddSingleton<UserInMemoryStore>();
             services.AddSingleton<WalletInMemoryStore>();
             services.AddSingleton<WalletNumberContext>();

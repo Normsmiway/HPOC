@@ -38,7 +38,7 @@ namespace App.Domains
             return entity;
         }
 
-        public IQueryable<TEntity> Get(Expression<Func<TEntity, bool>> predicate)
+        public IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
         {
             return Entities.Values.AsQueryable().Where(predicate);
         }
@@ -60,7 +60,7 @@ namespace App.Domains
 
         public Task<IQueryable<TEntity>> GetAsync(Expression<Func<TEntity, bool>> predicate)
         {
-            return Task.Run(() => { return Get(predicate); });
+            return Task.Run(() => { return Where(predicate); });
         }
 
         public void Remove(TId id)

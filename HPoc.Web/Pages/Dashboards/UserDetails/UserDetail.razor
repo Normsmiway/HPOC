@@ -1,0 +1,18 @@
+﻿
+<MudContainer>
+    <MudItem>
+        <MudGrid Class="mt-4">
+            <MudItem xs="12" sm="12" md="2">
+                <MudAvatar Image="https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A" 
+                           Style="height:70px; width:70px;" Class="ma-2" />
+            </MudItem>
+            <MudItem xs="12" sm="6" md="8">
+                <MudText Align="Align.Left" Typo="Typo.h6" Color="Color.Secondary">@Model.Name </MudText>
+                <MudText Align="Align.Justify"><b>@Model.WalletNumber</b></MudText>
+                <MudText Align="Align.Justify" Typo="Typo.caption">@Model.Email</MudText>
+                <MudText Align="Align.Justify"  Typo="Typo.caption">@Model.PhoneNumber</MudText>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+
+</MudContainer>

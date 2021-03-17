@@ -1,0 +1,48 @@
+﻿<MudItem xs="12" sm="6" md="12">
+    <MudCard Elevation="0" Class="rounded-lg">
+        <MudCardHeader>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5" Align="Align.Center">Transfer to: @Model.ReceiverWalletNumber</MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+                <DataAnnotationsValidator />
+                <MudCard Elevation="0">
+                    <MudCardContent>
+                        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.RemoveCircle" Color="Color.Secondary" OnClick="Subtract"></MudIconButton>
+                        <strong><span style="color:#e2bb13; font-size:2em;">@amount.ToString("0,0.00")</span></strong>
+                        <MudIconButton Size="Size.Large" Icon="@Icons.Material.Filled.AddCircle" Color="Color.Secondary" OnClick="Add"></MudIconButton>
+                        <MudTextField Label="Receiver Wallet Id" HelperText="@walletUserName" OnKeyPress="MakeEnquiry" OnKeyUp="(async ()=>await KeyUp())"
+                                      @bind-Value="Model.ReceiverWalletNumber" For="@(() => Model.ReceiverWalletNumber)"
+                                      Validation="@walletNumberValidator.Validation"
+                                      Immediate="true" />
+                    </MudCardContent>
+
+                    <MudCardActions>
+                       
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Secondary"
+                                   Size="Size.Large" Class="ml-auto" Style="width:50%;">Send</MudButton>
+                    </MudCardActions>
+
+
+                </MudCard>
+
+                <MudExpansionPanels>
+                    <MudExpansionPanel Text="Show Validation Summary">
+                        @if (success)
+                        {
+                            <MudText Color="Color.Success">Success</MudText>
+                        }
+                        else
+                        {
+                            <MudText Color="@Color.Error">
+                                <ValidationSummary />
+                            </MudText>
+                        }
+                    </MudExpansionPanel>
+                </MudExpansionPanels>
+            </EditForm>
+        </MudCardContent>
+    </MudCard>
+</MudItem>

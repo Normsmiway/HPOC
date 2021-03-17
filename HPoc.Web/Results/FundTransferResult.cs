@@ -1,0 +1,4 @@
+﻿namespace HPoc.Web.Results
+{
+   
+}

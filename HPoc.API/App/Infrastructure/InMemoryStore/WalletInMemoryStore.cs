@@ -69,8 +69,7 @@ namespace App.Infrastructure.InMemoryStore
             {
                 return Task.Run(() =>
                 {
-                    Wallet walletOld = _context.Wallets
-                    .Where(w => w.Id == wallet.Id).SingleOrDefault();
+                    Wallet walletOld = _context.Wallets.Where(w => w.Id == wallet.Id).SingleOrDefault();
 
                     _context.Wallets.Remove(walletOld);
                 });

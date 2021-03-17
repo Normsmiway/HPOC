@@ -19,7 +19,7 @@ namespace App.Applications.WalletNumbers
         {
             bool useRaw = false;
             fallBackStrategy = "Luhn";
-            int maxLength = 3;
+            int maxLength = 5;
             prefix = "HAL";
             maxNumberOfterations =10;
             incrementalValue = 1;

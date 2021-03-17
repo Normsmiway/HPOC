@@ -6,6 +6,7 @@ C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.runtimeconfig.json
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.pdb
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

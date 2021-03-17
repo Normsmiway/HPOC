@@ -54,8 +54,8 @@ namespace App.Applications.UseCases.GetUsers
             List<UserResult> usersResult = new();
             var users = _context.Users;
 
-            if (users is not null && users.Any())
-                foreach (var user in users)
+            if (users is not null && users.GetAll().Any())
+                foreach (var user in users.GetAll())
                 {
                     usersResult.Add(await GetUserResult(user));
                 }

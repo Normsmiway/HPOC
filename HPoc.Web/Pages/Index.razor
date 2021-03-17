@@ -1,0 +1,53 @@
+﻿@page "/"
+@layout EmptyLayout
+
+<MudItem xs="12" sm="6" md="4">
+    <MudCard Elevation="0" Class="rounded-lg pb-4">
+        <MudCardHeader>
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5" Align="Align.Center"></MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <EditForm Model="@Model" OnValidSubmit="OnValidSubmit">
+                <DataAnnotationsValidator />
+                <MudCard Elevation="0">
+                    <MudCardContent>
+                        <MudTextField Label="Wallet Number" HelperText="@walletUserName" OnKeyPress="MakeEnquiry" OnKeyUp="(async ()=>await KeyUp())"
+                                      @bind-Value="Model.WalletNumber" For="@(() => Model.WalletNumber)"
+                                      Validation="@walletNumberValidator.Validation"
+                                      Immediate="true" />
+
+                      
+
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudLink Href="/register" Underline="Underline.Always">Register</MudLink>
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" 
+                                   Size="Size.Large" Class="ml-auto" Style="width:50%;">Proceed Now</MudButton>
+                    </MudCardActions>
+
+
+                </MudCard>
+                <MudText Typo="Typo.body2" Align="Align.Center" Class="my-4">
+                    Fill out the form correctly to see the success message.
+                </MudText>
+
+                <MudExpansionPanels>
+                    <MudExpansionPanel Text="Show Validation Summary">
+                        @if (success)
+                        {
+                            <MudText Color="Color.Success">Success</MudText>
+                        }
+                        else
+                        {
+                            <MudText Color="@Color.Error">
+                                <ValidationSummary />
+                            </MudText>
+                        }
+                    </MudExpansionPanel>
+                </MudExpansionPanels>
+            </EditForm>
+        </MudCardContent>
+    </MudCard>
+</MudItem>

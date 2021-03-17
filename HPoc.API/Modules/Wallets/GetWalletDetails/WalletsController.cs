@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
-
+using App.Applications.Results;
 
 namespace HPoc.API.Modules.Wallets.GetWalletDetails
 {
@@ -34,7 +34,7 @@ namespace HPoc.API.Modules.Wallets.GetWalletDetails
         }
 
         #region private helper
-        private static IActionResult GetWalletDetails(App.Applications.Results.WalletResult wallet, List<TransactionModel> transactions)
+        private static IActionResult GetWalletDetails(WalletResult wallet, List<TransactionModel> transactions)
         {
             foreach (var item in wallet.Transactions)
             {
