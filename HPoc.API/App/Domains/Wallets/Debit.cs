@@ -7,17 +7,17 @@ namespace App.Domains.Wallets
     {
         public Guid WalletId { get; private set; }
         public Guid Id { get; private init; }
-        public Amount Amount { get; private init; }
-        public DateTime TransactionDate { get; private init; }
-        public string Reference { get; private init; }
-        public string Narration { get; private init; }
+        public Amount Amount { get; private set; }
+        public DateTime TransactionDate { get; private set; }
+        public string Reference { get; private set; }
+        public string Narration { get; private set; }
         public string TransactionType { get { return nameof(Debit); } }
-        public string MarchantRefence { get; }
+        public string MarchantRefence { get; set; }
 
         private Debit() { }
 
         public static Debit Load(Guid id, Guid walletId, Amount amount, DateTime transactionDate,
-            string reference, string narration)
+            string reference, string narration,string marchatRef)
         {
             return new Debit()
             {
@@ -26,7 +26,8 @@ namespace App.Domains.Wallets
                 Narration = narration,
                 Reference = reference,
                 TransactionDate = transactionDate,
-                WalletId = walletId
+                WalletId = walletId,
+                MarchantRefence=marchatRef
             };
         }
 

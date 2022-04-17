@@ -1,6 +1,7 @@
 ﻿using App.Applications.Results;
 using App.Domains.Wallets;
 using App.Infrastructure.InMemoryStore;
+using HPoc.API.App.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,24 +12,24 @@ namespace App.Applications.UseCases.GetWallets
     public class WalletQueries : IWalletQueries
     {
         private readonly Context _context;
-
-        public WalletQueries(Context context)
+        private readonly IWalletRepository _repository;
+        public WalletQueries(IWalletRepository repository, Context context)
         {
             _context = context;
+            _repository = repository;
         }
-        public Task<WalletResult> GetWalletAsync(Guid walletId)
+        public async Task<WalletResult> GetWalletAsync(Guid walletId)
         {
-            Wallet wallet = _context.Wallets.Where(w => w.Id == walletId).SingleOrDefault();
+            Wallet wallet = await _repository.Get(walletId);
 
-            return GetAsync(wallet);
+            return await GetAsync(wallet);
         }
 
-        public Task<WalletResult> GetWalletAsync(string walletNumber)
+        public async Task<WalletResult> GetWalletAsync(string walletNumber)
         {
-            Wallet wallet = _context.Wallets.Where(w =>
-            w.WalletNumber == walletNumber).SingleOrDefault();
+            Wallet wallet = await _repository.Get(walletNumber);
 
-            return GetAsync(wallet);
+            return await GetAsync(wallet);
         }
 
 

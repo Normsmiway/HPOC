@@ -9,6 +9,8 @@ using App.Applications.UseCases.Withdrawal;
 using App.Applications.WalletNumbers;
 using App.Domains;
 using App.Infrastructure.InMemoryStore;
+using HPoc.API.App.Applications.Contracts;
+using HPoc.API.App.Infrastructure.Repositories;
 using HPoc.API.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,7 +30,6 @@ namespace HPoc.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -47,9 +48,17 @@ namespace HPoc.API
                 options.Filters.Add(typeof(ValidateModelAttribute));
             });
 
+            services.AddSingleton<IUserRepository, UserRepository>();
+            services.AddSingleton<IWalletRepository, WalletRepository>();
+
+            services.AddScoped<UserInMemoryStore>();
+            services.AddScoped<WalletInMemoryStore>();
+
+
             services.AddSingleton(c => { return new Context(); });
-            services.AddSingleton<UserInMemoryStore>();
-            services.AddSingleton<WalletInMemoryStore>();
+
+            services.AddSingleton<IUserStore,UserInMemoryStore>();
+            services.AddSingleton<IWalletStore,WalletInMemoryStore>();
             services.AddSingleton<WalletNumberContext>();
             services.AddSingleton(typeof(InMemoryRepository<,>));
 
@@ -66,11 +75,12 @@ namespace HPoc.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pay POC API", Version = "v1" });
             });
+            services.AddApplicationInsightsTelemetry();
 
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+       
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

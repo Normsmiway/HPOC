@@ -1,4 +1,4 @@
-﻿using App.Domains.ValueObjects;
+﻿using App.Domains;
 using System.Threading.Tasks;
 
 namespace App.Applications.WalletNumbers

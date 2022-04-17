@@ -1,75 +1,27 @@
-﻿using App.Domains.Users;
-using App.Domains.Wallets;
+﻿using System;
+using HPoc.API.App.Infrastructure.Entities;
 using HPoc.API.App.Infrastructure.InMemoryStore;
-using System;
-using System.IO;
-
 namespace App.Infrastructure.InMemoryStore
 {
     public class Context
     {
+
+      //  const string baseFilePath = "HALALPOCDB";
         public WalletJsonStore<User, Guid> Users { get; set; }
         public WalletJsonStore<Wallet, Guid> Wallets { get; set; }
+        public WalletJsonStore<WalletNumber, Guid> WalletNumbers { get; set; }
 
-        string usersPath, walletPath;
+        public WalletJsonStore<Credit, Guid> Credits { get; set; }
+        public WalletJsonStore<Debit, Guid> Debits { get; set; }
+
+
         public Context()
         {
-            // EnsureRequiredFilesAreCreated();
-            AssignPath();
-            Users = new WalletJsonStore<User, Guid>(usersPath);
-            Wallets = new WalletJsonStore<Wallet, Guid>(walletPath);
-        }
-
-        public void AssignPath()
-        {
-            string baseFilePath = "HALALPOCDB";
-            usersPath = Path.Combine(baseFilePath, $"{nameof(Users)}.json");
-            walletPath = Path.Combine(baseFilePath, $"{nameof(Wallets)}.json");
-
-        }
-        private void EnsureRequiredFilesAreCreated()
-        {
-            string baseFilePath = "HALALPOCDB";
-
-            if (!Directory.Exists(baseFilePath))
-                Directory.CreateDirectory(baseFilePath);
-
-            usersPath = Path.Combine(baseFilePath, $"{nameof(Users)}.json");
-            walletPath = Path.Combine(baseFilePath, $"{nameof(Wallets)}.json");
-            if (!File.Exists(usersPath))
-                File.Create(usersPath);
-            if (!File.Exists(walletPath))
-                File.Create(walletPath);
-        }
-    }
-
-    public class JsonUserStore
-    {
-        public WalletJsonStore<User, Guid> Users { get; set; }
-        public WalletJsonStore<Wallet, Guid> Wallets { get; set; }
-
-        string usersPath, walletPath;
-        public JsonUserStore()
-        {
-            EnsureRequiredFilesAreCreated();
-
-            Users = new WalletJsonStore<User, Guid>(usersPath);
-            Wallets = new WalletJsonStore<Wallet, Guid>(walletPath);
-        }
-
-        private void EnsureRequiredFilesAreCreated()
-        {
-            string baseFilePath = "HALALPOCDB";
-
-            if (!Directory.Exists(baseFilePath))
-                Directory.CreateDirectory(baseFilePath);
-
-            usersPath = Path.Combine(baseFilePath, $"{nameof(Users)}.json");
-            walletPath = Path.Combine(baseFilePath, $"{nameof(Wallets)}.json");
-            if (!File.Exists(usersPath))
-                File.Create(usersPath);
-            if (!File.Exists(walletPath))
-                File.Create(walletPath);
+            Users = new WalletJsonStore<User, Guid>();
+            Wallets = new WalletJsonStore<Wallet, Guid>();
+            WalletNumbers = new WalletJsonStore<WalletNumber, Guid>();
+            Credits = new WalletJsonStore<Credit, Guid>();
+            Debits = new WalletJsonStore<Debit, Guid>();
         }
     }
 }

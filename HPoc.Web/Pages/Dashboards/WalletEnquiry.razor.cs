@@ -14,11 +14,11 @@ namespace HPoc.Web.Pages.Dashboards
         string walletNumner = string.Empty;
         const int numberLength = 8;
         const string RegexForValidation = "^[A-Z]{3}[0-9]{3,9}";
-        [Parameter]public EnquiryModel Model { get; set; } = new();
+        [Parameter] public EnquiryModel Model { get; set; } = new();
         public UserDetailsResult UserDetailModel { get; private set; } = new();
         [Inject] IHalalWalletClient WalletClient { get; set; }
         [Inject] NavigationManager Navigator { get; set; }
-      
+
         bool success;
         string walletUserName = string.Empty;
         private async Task OnValidSubmit(EditContext context)
@@ -43,8 +43,11 @@ namespace HPoc.Web.Pages.Dashboards
 
         public async Task KeyUp()
         {
-            Model.WalletNumber = Model.WalletNumber.Trim().ToUpperInvariant();
-          await  MakeEnquiry();
+            if (!string.IsNullOrWhiteSpace(Model.WalletNumber))
+            {
+                Model.WalletNumber = Model.WalletNumber.Trim().ToUpperInvariant();
+                await MakeEnquiry();
+            }
         }
 
         public async Task MakeEnquiry()

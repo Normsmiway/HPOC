@@ -1,20 +1,22 @@
-﻿namespace App.Domains.Users
+﻿using Newtonsoft.Json;
+
+namespace App.Domains.Users
 {
     public sealed class PhoneNumber
     {
-        private string _text;
-
-        public PhoneNumber(string text)
+        public  string Value { get; private set; }
+        [JsonConstructor]
+        public PhoneNumber(string value)
         {
             //if (string.IsNullOrWhiteSpace(text))
             //    throw new PhoneNumberShouldNotBeEmptyException("The 'PhoneNumber' field is required");
 
-            this._text = text;
+            this.Value = value;
         }
 
         public override string ToString()
         {
-            return _text.ToString();
+            return Value.ToString();
         }
 
         public static implicit operator PhoneNumber(string text)
@@ -24,7 +26,7 @@
 
         public static implicit operator string(PhoneNumber name)
         {
-            return name._text;
+            return name?.Value;
         }
 
         public override bool Equals(object obj)
@@ -41,15 +43,15 @@
 
             if (obj is string)
             {
-                return obj.ToString() == _text;
+                return obj.ToString() == Value;
             }
 
-            return ((PhoneNumber)obj)._text == _text;
+            return ((PhoneNumber)obj).Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return _text.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

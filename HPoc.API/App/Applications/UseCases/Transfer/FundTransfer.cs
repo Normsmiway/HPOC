@@ -41,8 +41,6 @@ namespace App.Applications.UseCases.Transfer
 
             if (withrawalResult is not null)
             {
-
-
                 _ = Guid.TryParse(sendingWallet?.UserId, out Guid senderUsrId);
                 var sender = await GetUser(senderUsrId);
 

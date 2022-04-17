@@ -51,6 +51,7 @@ namespace HPoc.Web.Pages
         {
             if (Model?.WalletNumber?.Length == numberLength)
             {
+                Model.WalletNumber = Model.WalletNumber.Substring(0, numberLength);
                 success = true;
                 var result = await WalletClient.GetUserDetails(Model.WalletNumber.Trim());
 

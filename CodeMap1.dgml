@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" FilterState="CodeSchema_Calls,CodeSchema_FunctionPointer,CodeSchema_FieldRead,CodeSchema_FieldWrite,References,CodeSchema_ReturnTypeLink,CodeSchema_AttributeUse,CodeMap_ProjectReference,CodeMap_ExternalReference,UncategorizedRelationship,CodeMap_SolutionFolder,CodeSchema_Assembly,CodeSchema_Namespace,CodeSchema_Interface,CodeSchema_Event,CodeSchema_Struct,CodeSchema_Method,CodeSchema_Field,CodeSchema_Property,CodeSchema_Delegate,UncategorizedCodeElement" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @12 Type=NameShouldNotBeEmptyException)" Category="CodeSchema_Class" Bounds="552.623333333333,605,247.46,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="NameShouldNotBeEmptyException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="NameShouldNotBeEmptyException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/ValueObjects/Exceptions/NameShouldNotBeEmptyException.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=53)" />
+    <Node Id="(@1 @17 Type=TransactionType)" Category="CodeSchema_Enum" Bounds="1008.47333333333,220,141.613333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="TransactionType" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="TransactionType" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/ITransaction.cs StartLineNumber=16 StartCharacterOffset=16 EndLineNumber=16 EndCharacterOffset=31)" />
+    <Node Id="(@1 @24 Type=PhoneNumberShouldNotBeEmptyException)" Category="CodeSchema_Class" Bounds="322.373333333333,660,292.976666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="PhoneNumberShouldNotBeEmptyException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PhoneNumberShouldNotBeEmptyException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/NameShouldNotBeEmptyException.cs StartLineNumber=18 StartCharacterOffset=24 EndLineNumber=18 EndCharacterOffset=60)" />
+    <Node Id="(@1 @41 Type=LuhnProvider)" Category="CodeSchema_Class" Bounds="474.53,165,131.113333333333,25" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="LuhnProvider" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="LuhnProvider" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/LuhnProvider.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=36)" />
+    <Node Id="(@1 @41 Type=NumberGenerator)" Category="CodeSchema_Class" Bounds="550.253333333334,330,157.733333333333,25" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="NumberGenerator" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="NumberGenerator" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/NumberGenerator.cs StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=39)" />
+    <Node Id="(@1 Namespace=App.Applications.UseCases.Deactivate Type=IDeactivateAccount)" Category="CodeSchema_Interface" Bounds="0,385,163.206666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IDeactivateAccount" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IDeactivateAccount" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Deactivate/IDeactivateAccount.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=39)" />
+    <Node Id="(@1 Namespace=App.Infrastructure Type=InfrastructureException)" Category="CodeSchema_Class" Bounds="0,495,183.236666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="InfrastructureException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="InfrastructureException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/InfrastructureException.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=40)" />
+    <Node Id="@10" Category="CodeSchema_Interface" Bounds="431.81,495,195.303333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IRepository&lt;TEntity, TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IRepository&lt;TEntity, TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/IRepository.cs StartLineNumber=4 StartCharacterOffset=21 EndLineNumber=4 EndCharacterOffset=32)" />
+    <Node Id="@11" Category="CodeSchema_Class" Bounds="0,550,219.58,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletJsonStore&lt;TEntity, TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletJsonStore&lt;TEntity, TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/InMemoryStore/WalletJsonStore.cs StartLineNumber=12 StartCharacterOffset=17 EndLineNumber=12 EndCharacterOffset=32)" />
+    <Node Id="@13" Category="CodeSchema_Class" Bounds="389.856666666667,55,103.753333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Amount" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Amount" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/ValueObjects/Amount.cs StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=30)" />
+    <Node Id="@15" Category="CodeSchema_Class" Bounds="389.909999999999,385,172.346666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="ApplicationException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ApplicationException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Exceptions/ApplicationException.cs StartLineNumber=3 StartCharacterOffset=17 EndLineNumber=3 EndCharacterOffset=37)" />
+    <Node Id="@16" Category="CodeSchema_Class" Bounds="124.003333333333,55,102.166666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Context" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Context" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/InMemoryStore/Context.cs StartLineNumber=7 StartCharacterOffset=17 EndLineNumber=7 EndCharacterOffset=24)" />
+    <Node Id="@18" Category="CodeSchema_Class" Bounds="833.95,0,92.92,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Credit" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Credit" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/Credit.cs StartLineNumber=5 StartCharacterOffset=25 EndLineNumber=5 EndCharacterOffset=31)" />
+    <Node Id="@19" Category="CodeSchema_Class" Bounds="711.03,0,92.92,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Credit" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Credit" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/Credit.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=23)" />
+    <Node Id="@20" Category="CodeSchema_Class" Bounds="737.986666666668,330,160.013333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="DeactivateAccount" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="DeactivateAccount" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Deactivate/DeactivateAccount.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=41)" />
+    <Node Id="@21" Category="CodeSchema_Class" Bounds="468.616666666667,0,89.7166666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Debit" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Debit" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/Debit.cs StartLineNumber=5 StartCharacterOffset=25 EndLineNumber=5 EndCharacterOffset=30)" />
+    <Node Id="@22" Category="CodeSchema_Class" Bounds="348.9,0,89.7166666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Debit" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Debit" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/Debit.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=22)" />
+    <Node Id="@23" Category="CodeSchema_Class" Bounds="366.426666666667,330,153.826666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="DomainException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="DomainException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/DomainException.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=32)" />
+    <Node Id="@25" Category="CodeSchema_Class" Bounds="229.573333333333,0,89.3266666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Email" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Email" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/Email.cs StartLineNumber=4 StartCharacterOffset=24 EndLineNumber=4 EndCharacterOffset=29)" />
+    <Node Id="@26" Category="CodeSchema_Class" Bounds="765.57,550,244.09,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="EmailShouldNotBeEmptyException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="EmailShouldNotBeEmptyException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/NameShouldNotBeEmptyException.cs StartLineNumber=11 StartCharacterOffset=24 EndLineNumber=11 EndCharacterOffset=54)" />
+    <Node Id="@27" Category="CodeSchema_Class" Bounds="0,220,136.23,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="FundingResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FundingResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Funding/FundResult.cs StartLineNumber=6 StartCharacterOffset=24 EndLineNumber=6 EndCharacterOffset=37)" />
+    <Node Id="@28" Category="CodeSchema_Class" Bounds="315.41,165,129.12,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="FundTransfer" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FundTransfer" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Transfer/FundTransfer.cs StartLineNumber=12 StartCharacterOffset=24 EndLineNumber=12 EndCharacterOffset=36)" />
+    <Node Id="@29" Category="CodeSchema_Class" Bounds="928.000000000001,330,161.08,25" CodeSchemaProperty_IsPublic="True" CommonLabel="FundTransferResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FundTransferResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Transfer/WalletTransferResult.cs StartLineNumber=5 StartCharacterOffset=17 EndLineNumber=5 EndCharacterOffset=35)" />
+    <Node Id="@3" Category="CodeSchema_Class" Bounds="525.29,275,148.03,25" CodeSchemaProperty_IsPublic="True" CommonLabel="BaseEntity&lt;TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="BaseEntity&lt;TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/BaseEntity.cs StartLineNumber=5 StartCharacterOffset=17 EndLineNumber=5 EndCharacterOffset=27)" />
+    <Node Id="@30" Category="CodeSchema_Class" Bounds="956.003333333334,55,120.51,25" CodeSchemaProperty_IsPublic="True" CommonLabel="FundWallet" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="FundWallet" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Funding/FundWallet.cs StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=27)" />
+    <Node Id="@31" Category="CodeSchema_Interface" Bounds="635.643333333333,165,132.313333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IFundTransfer" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IFundTransfer" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Transfer/WalletTransfer.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=34)" />
+    <Node Id="@32" Category="CodeSchema_Interface" Bounds="301.563333333334,110,123.703333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IFundWallet" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IFundWallet" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Funding/IFundWallet.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=32)" />
+    <Node Id="@33" Category="CodeSchema_Class" Bounds="657.113333333334,495,197.956666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="InsuficientFundsException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="InsuficientFundsException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/InsuficientFundsException.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=49)" />
+    <Node Id="@34" Category="CodeSchema_Class" Bounds="213.236666666667,495,188.573333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsInternal="True" CommonLabel="InvalidTransferException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="InvalidTransferException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Exceptions/InvalidTransferException.cs StartLineNumber=2 StartCharacterOffset=26 EndLineNumber=2 EndCharacterOffset=50)" />
+    <Node Id="@35" Category="CodeSchema_Class" Bounds="249.58,550,223.57,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="InvalidWalletNumberException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="InvalidWalletNumberException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/ValueObjects/Exceptions/InvalidWalletNumberException.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=52)" />
+    <Node Id="@36" Category="CodeSchema_Interface" Bounds="523.61,55,106.88,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IRegister" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IRegister" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Registers/IRegister.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=30)" />
+    <Node Id="@37" Category="CodeSchema_Interface" Bounds="455.266666666667,110,124.043333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ITransaction" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="ITransaction" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/ITransaction.cs StartLineNumber=5 StartCharacterOffset=21 EndLineNumber=5 EndCharacterOffset=33)" />
+    <Node Id="@38" Category="CodeSchema_Interface" Bounds="156.866666666667,165,128.543333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IUserQueries" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IUserQueries" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/GetUsers/IUserQueries.cs StartLineNumber=7 StartCharacterOffset=21 EndLineNumber=7 EndCharacterOffset=33)" />
+    <Node Id="@40" Category="CodeSchema_Interface" Bounds="174.156666666667,275,144.243333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IUserRepository" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IUserRepository" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Repositories/Users/IUserRepository.cs StartLineNumber=7 StartCharacterOffset=21 EndLineNumber=7 EndCharacterOffset=36)" />
+    <Node Id="@42" Category="CodeSchema_Interface" Bounds="837.883333333333,440,182.643333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IWalletNumberHandler" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IWalletNumberHandler" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/IWalletNumberHandler.cs StartLineNumber=5 StartCharacterOffset=21 EndLineNumber=5 EndCharacterOffset=41)" />
+    <Node Id="@43" Category="CodeSchema_Interface" Bounds="501.449999999999,220,137.76,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IWalletQueries" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IWalletQueries" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/GetWallets/IWalletQueries.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=35)" />
+    <Node Id="@44" Category="CodeSchema_Interface" Bounds="182.966666666667,330,153.46,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IWalletRepository" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IWalletRepository" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Repositories/Wallets/IWalletRepository.cs StartLineNumber=10 StartCharacterOffset=21 EndLineNumber=10 EndCharacterOffset=38)" />
+    <Node Id="@45" Category="CodeSchema_Interface" Bounds="609.31,110,124.2,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IWithdrawal" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IWithdrawal" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Withdrawal/IWithrawal.cs StartLineNumber=6 StartCharacterOffset=21 EndLineNumber=6 EndCharacterOffset=32)" />
+    <Node Id="@46" Category="CodeSchema_Class" Bounds="588.333333333333,0,92.6966666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Name" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Name" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/Name.cs StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=28)" />
+    <Node Id="@47" Category="CodeSchema_Class" Bounds="830.083333333333,605,247.46,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="NameShouldNotBeEmptyException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="NameShouldNotBeEmptyException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/NameShouldNotBeEmptyException.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=53)" />
+    <Node Id="@48" Category="CodeSchema_Enum" Bounds="0,275,144.156666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="NumberStrategy" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Enum" Label="NumberStrategy" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/WalletNumberProvider.cs StartLineNumber=99 StartCharacterOffset=16 EndLineNumber=99 EndCharacterOffset=30)" />
+    <Node Id="@49" Category="CodeSchema_Class" Bounds="669.209999999999,220,138.213333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="PhoneNumber" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="PhoneNumber" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/PhoneNumber.cs StartLineNumber=4 StartCharacterOffset=24 EndLineNumber=4 EndCharacterOffset=35)" />
+    <Node Id="@5" Category="CodeSchema_Interface" Bounds="0,440,177.953333333333,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsInternal="True" CommonLabel="IAggregateRoot&lt;TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IAggregateRoot&lt;TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/IAggregateRoot.cs StartLineNumber=2 StartCharacterOffset=23 EndLineNumber=2 EndCharacterOffset=37)" />
+    <Node Id="@50" Category="CodeSchema_Class" Bounds="256.17,55,103.686666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Register" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Register" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Registers/Register.cs StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=25)" />
+    <Node Id="@51" Category="CodeSchema_Class" Bounds="962.523333333334,165,135.646666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="RegisterResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="RegisterResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Registers/RegisterResult.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=38)" />
+    <Node Id="@52" Category="CodeSchema_Class" Bounds="592.256666666665,385,173.736666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="TransactionCollection" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="TransactionCollection" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/TransactionCollection.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=45)" />
+    <Node Id="@54" Category="CodeSchema_Class" Bounds="883.586666666666,275,152.81,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="TransactionResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="TransactionResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Results/TransactionResult.cs StartLineNumber=4 StartCharacterOffset=24 EndLineNumber=4 EndCharacterOffset=41)" />
+    <Node Id="@55" Category="CodeSchema_Class" Bounds="0,0,84.7866666666666,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="User" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="User" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/User.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=28)" />
+    <Node Id="@56" Category="CodeSchema_Class" Bounds="114.786666666667,0,84.7866666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="User" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="User" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/User.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=21)" />
+    <Node Id="@57" Category="CodeSchema_Class" Bounds="0,110,120.556666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="UserDetails" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UserDetails" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Results/UserResult.cs StartLineNumber=30 StartCharacterOffset=24 EndLineNumber=30 EndCharacterOffset=35)" />
+    <Node Id="@58" Category="CodeSchema_Class" Bounds="193.206666666666,385,166.703333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="UserInMemoryStore" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UserInMemoryStore" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/InMemoryStore/UserInMemoryStore.cs StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=34)" />
+    <Node Id="@59" Category="CodeSchema_Class" Bounds="763.51,110,125.35,25" CodeSchemaProperty_IsPublic="True" CommonLabel="UserQueries" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UserQueries" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/GetUsers/UserQueries.cs StartLineNumber=14 StartCharacterOffset=17 EndLineNumber=14 EndCharacterOffset=28)" />
+    <Node Id="@6" Category="CodeSchema_Interface" Bounds="0,165,126.866666666667,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IEntity&lt;TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IEntity&lt;TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/IEntity.cs StartLineNumber=3 StartCharacterOffset=21 EndLineNumber=3 EndCharacterOffset=28)" />
+    <Node Id="@60" Category="CodeSchema_Class" Bounds="837.423333333332,220,141.05,25" CodeSchemaProperty_IsPublic="True" CommonLabel="UserRepository" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UserRepository" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Repositories/Users/UserRepository.cs StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=31)" />
+    <Node Id="@61" Category="CodeSchema_Class" Bounds="660.49,55,116.746666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="UserResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="UserResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Results/UserResult.cs StartLineNumber=5 StartCharacterOffset=24 EndLineNumber=5 EndCharacterOffset=34)" />
+    <Node Id="@62" Category="CodeSchema_Class" Bounds="956.87,0,94.0033333333332,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="Wallet" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Wallet" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/Wallet.cs StartLineNumber=8 StartCharacterOffset=24 EndLineNumber=8 EndCharacterOffset=30)" />
+    <Node Id="@63" Category="CodeSchema_Class" Bounds="0,55,94.0033333333336,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Wallet" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Wallet" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/Wallet.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=23)" />
+    <Node Id="@64" Category="CodeSchema_Class" Bounds="503.15,550,232.42,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletCannotBeClosedException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletCannotBeClosedException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/InsuficientFundsException.cs StartLineNumber=10 StartCharacterOffset=24 EndLineNumber=10 EndCharacterOffset=53)" />
+    <Node Id="@65" Category="CodeSchema_Class" Bounds="348.4,275,146.89,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletCollection" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletCollection" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Users/WalletCollection.cs StartLineNumber=6 StartCharacterOffset=24 EndLineNumber=6 EndCharacterOffset=40)" />
+    <Node Id="@66" Category="CodeSchema_Class" Bounds="795.993333333331,385,175.92,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletInMemoryStore" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletInMemoryStore" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/InMemoryStore/WalletInMemoryStore.cs StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=36)" />
+    <Node Id="@67" Category="CodeSchema_Class" Bounds="885.070000000001,495,198.856666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsInternal="True" CommonLabel="WalletNotFoundException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNotFoundException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Exceptions/WalletNotFoundException.cs StartLineNumber=2 StartCharacterOffset=26 EndLineNumber=2 EndCharacterOffset=49)" />
+    <Node Id="@68" Category="CodeSchema_Class" Bounds="333.839999999999,220,137.61,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumber" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumber" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/Wallets/WalletNumber.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=36)" />
+    <Node Id="@69" Category="CodeSchema_Class" Bounds="166.23,220,137.61,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumber" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumber" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Entities/WalletNumber.cs StartLineNumber=4 StartCharacterOffset=17 EndLineNumber=4 EndCharacterOffset=29)" />
+    <Node Id="@70" Category="CodeSchema_Class" Bounds="207.953333333333,440,178.776666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumberContext" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumberContext" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/WalletNumberContext.cs StartLineNumber=9 StartCharacterOffset=17 EndLineNumber=9 EndCharacterOffset=36)" />
+    <Node Id="@71" Category="CodeSchema_Class" Bounds="416.73,440,179.45,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumberHandler" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumberHandler" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/WalletNumberHandler.cs StartLineNumber=5 StartCharacterOffset=17 EndLineNumber=5 EndCharacterOffset=36)" />
+    <Node Id="@72" Category="CodeSchema_Class" Bounds="626.18,440,181.703333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumberProvider" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumberProvider" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/WalletNumber/WalletNumberProvider.cs StartLineNumber=7 StartCharacterOffset=17 EndLineNumber=7 EndCharacterOffset=37)" />
+    <Node Id="@73" Category="CodeSchema_Class" Bounds="0,660,292.373333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletNumberShouldNotBeEmptyException" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletNumberShouldNotBeEmptyException" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/ValueObjects/Exceptions/WalletNumberShouldNotBeEmptyException.cs StartLineNumber=2 StartCharacterOffset=24 EndLineNumber=2 EndCharacterOffset=61)" />
+    <Node Id="@74" Category="CodeSchema_Class" Bounds="797.956666666667,165,134.566666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletQueries" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletQueries" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/GetWallets/WalletQueries.cs StartLineNumber=11 StartCharacterOffset=17 EndLineNumber=11 EndCharacterOffset=30)" />
+    <Node Id="@75" Category="CodeSchema_Class" Bounds="703.32,275,150.266666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletRepository" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletRepository" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Infrastructure/Repositories/Wallets/WalletRepository.cs StartLineNumber=10 StartCharacterOffset=17 EndLineNumber=10 EndCharacterOffset=33)" />
+    <Node Id="@76" Category="CodeSchema_Class" Bounds="918.86,110,125.963333333333,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/Results/WalletResult.cs StartLineNumber=7 StartCharacterOffset=24 EndLineNumber=7 EndCharacterOffset=36)" />
+    <Node Id="@77" Category="CodeSchema_Class" Bounds="807.236666666667,55,118.766666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WalletType" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WalletType" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/ValueObjects/WalletType.cs StartLineNumber=6 StartCharacterOffset=24 EndLineNumber=6 EndCharacterOffset=34)" />
+    <Node Id="@78" Category="CodeSchema_Class" Bounds="150.556666666667,110,121.006666666667,25" CodeSchemaProperty_IsPublic="True" CommonLabel="Withdrawal" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="Withdrawal" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Withdrawal/Withdrawal.cs StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=27)" />
+    <Node Id="@79" Category="CodeSchema_Class" Bounds="0,330,152.966666666667,25" CodeSchemaProperty_IsFinal="True" CodeSchemaProperty_IsPublic="True" CommonLabel="WithdrawalResult" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="WithdrawalResult" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Applications/UseCases/Withdrawal/WithrawalResult.cs StartLineNumber=6 StartCharacterOffset=24 EndLineNumber=6 EndCharacterOffset=40)" />
+    <Node Id="@8" Category="CodeSchema_Class" Bounds="276.13,605,246.493333333333,25" CodeSchemaProperty_IsPublic="True" CommonLabel="InMemoryRepository&lt;TEntity, TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="InMemoryRepository&lt;TEntity, TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/InMemoryRepository.cs StartLineNumber=8 StartCharacterOffset=17 EndLineNumber=8 EndCharacterOffset=35)" />
+    <Node Id="@9" Category="CodeSchema_Interface" Bounds="-1.4210854715202E-14,605,246.13,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IReadOnlyRepository&lt;TEntity, TId&gt;" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="CodeSchema_Class" Label="IReadOnlyRepository&lt;TEntity, TId&gt;" SourceLocation="(Assembly=file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/App/Domains/IReadOnlyRepository.cs StartLineNumber=8 StartCharacterOffset=21 EndLineNumber=8 EndCharacterOffset=40)" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 @12 Type=NameShouldNotBeEmptyException)" Target="@23" Category="InheritsFrom" Bounds="383.624237060547,359.08642578125,221.922576904297,245.9140625" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="(@1 @24 Type=PhoneNumberShouldNotBeEmptyException)" Target="@23" Category="InheritsFrom" Bounds="383.624237060547,359.08642578125,149.133270263672,300.914184570313" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@10" Target="@9" Category="Implements" Bounds="177.163711547852,518.26318359375,255.85758972168,84.1881103515625" Weight="1" />
+    <Link Source="@11" Target="@10" Category="Implements" Bounds="205.16960837489,521.052652222137,220.883404779477,28.9479334921482" Weight="1" />
+    <Link Source="@11" Target="@6" Category="CodeSchema_Calls" Bounds="112.648193359375,192.697158813477,76.0994567871094,357.303451538086" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@11" Target="@9" Category="Implements" Bounds="112.807039969018,575.000585714286,5.01197560437522,20.7652850800903" Weight="1" />
+    <Link Source="@16" Target="@11" Category="References" Bounds="148.76155090332,79.9996871948242,38.6731719970703,467.132453918457" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="25">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@16" Target="@19" Category="References" Bounds="214.269195556641,28.1388149261475,503.531280517578,26.8608722686768" IsSourceVirtualized="True" Weight="5" />
+    <Link Source="@16" Target="@22" Category="References" Bounds="223.15352207564,25.6330923348914,118.388073798933,29.7768613419604" IsSourceVirtualized="True" Weight="5" />
+    <Link Source="@16" Target="@56" Category="References" Bounds="164.035915793952,33.5574442916647,6.98106130245344,21.442241422621" IsSourceVirtualized="True" Weight="5" />
+    <Link Source="@16" Target="@63" Category="References" Bounds="103.003333333333,67.4996857142857,20.9999999999999,0" IsSourceVirtualized="True" Weight="5" />
+    <Link Source="@16" Target="@69" Category="References" Bounds="143.973419189453,79.9996871948242,38.8252716064453,137.484428405762" IsSourceVirtualized="True" Weight="5" />
+    <Link Source="@18" Target="@13" Category="References" Bounds="484.470153808594,24.9995040893555,364.684997558594,27.0151100158691" IsSourceVirtualized="True" Weight="13">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@18" Target="@18" Category="References" Bounds="857.179992675781,-30.0004959106445,46.459228515625,29.9999994820682" Weight="1" />
+    <Link Source="@18" Target="@37" Category="Implements" Bounds="574.109924316406,21.3768100738525,260.033508300781,86.2091274261475" Weight="1" />
+    <Link Source="@18" Target="@6" Category="Implements" Bounds="113.164978027344,21.3768100738525,720.978454589844,140.905797958374" Weight="1" />
+    <Link Source="@19" Target="@3" Category="InheritsFrom" Bounds="611.232033606093,24.999417948718,139.067752194296,241.7656629093" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@20" Target="(@1 Namespace=App.Applications.UseCases.Deactivate Type=IDeactivateAccount)" Category="Implements" Bounds="146.914047241211,353.306945800781,592.322402954102,29.6305847167969" Weight="1" />
+    <Link Source="@20" Target="@62" Category="References" Bounds="787.822509765625,30.4222526550293,192.268737792969,299.577747344971" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@20" Target="@66" Category="References" Bounds="832.984215168094,355,29.0659682254471,24.2363729380912" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@20" Target="@67" Category="CodeSchema_Calls" Bounds="785.859130859375,355,129.287231445313,138.180358886719" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@20" Target="@8" Category="CodeSchema_Calls" Bounds="449.933349609375,355,361.319091796875,247.408813476563" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@21" Target="@13" Category="References" Bounds="465.180773848595,24.9995035714286,31.9893315542436,24.5243317609464" IsSourceVirtualized="True" Weight="13">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@21" Target="@21" Category="References" Bounds="491.045837402344,-30.0004959106445,44.8575439453125,29.9999994820682" Weight="1" />
+    <Link Source="@21" Target="@37" Category="Implements" Bounds="513.908332545456,24.9995035714286,2.61753322134905,75.5059032836601" Weight="1" />
+    <Link Source="@21" Target="@6" Category="Implements" Bounds="135.907653808594,23.0947742462158,333.782257080078,143.658048629761" Weight="1" />
+    <Link Source="@22" Target="@3" Category="InheritsFrom" Bounds="399.320709228516,24.9999504089355,173.099212646484,244.769855499268" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@25" Target="@26" Category="CodeSchema_Calls" Bounds="311.2177734375,24.9995861053467,474.541870117188,523.801134109497" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@26" Target="@23" Category="InheritsFrom" Bounds="502.394775390625,357.312622070313,292.284545898438,192.687805175781" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@27" Target="@13" Category="References" Bounds="94.7193145751953,80.2806091308594,287.660415649414,139.719375610352" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@27" Target="@18" Category="References" Bounds="116.703498840332,23.0670051574707,708.600090026855,196.93297958374" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@27" Target="@54" Category="References" Bounds="116.703437805176,244.999984741211,786.781547546387,27.7505950927734" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@28" Target="@13" Category="References" Bounds="401.377868652344,88.9698104858398,38.6041870117188,76.0300827026367" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@18" Category="CodeSchema_Calls" Bounds="443.926177978516,23.0670051574707,381.377410888672,144.550975799561" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@28" Target="@21" Category="CodeSchema_Calls" Bounds="393.673736572266,33.915470123291,117.007476806641,131.084423065186" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@28" Target="@27" Category="References" Bounds="142.913555854104,188.61360134119,174.040845410991,30.6945901633491" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="16">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@29" Category="References" Bounds="419.214294433594,189.999893188477,501.065368652344,140.544479370117" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="24">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@31" Category="Implements" Bounds="444.349243164063,186.332138061523,185.273193359375,13.8018493652344" Weight="1" />
+    <Link Source="@28" Target="@32" Category="References" Bounds="369.771523599755,143.61784819972,6.43598421841079,21.3820518002804" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@34" Category="CodeSchema_Calls" Bounds="330.725006103516,189.999893188477,66.1391906738281,301.922653198242" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@28" Target="@38" Category="References" Bounds="294.41,177.499892304521,21.0000000000002,1.8887921271471E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@43" Category="References" Bounds="423.233633554309,189.9999,95.1863914160663,27.5018484336787" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@45" Category="References" Bounds="442.179746744652,135.541402043212,160.123725471349,30.2183514747421" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@54" Category="CodeSchema_Calls" Bounds="426.595367431641,189.999893188477,473.402008056641,82.8669891357422" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8" />
+    <Link Source="@28" Target="@61" Category="References" Bounds="443.926177978516,82.3508605957031,220.025360107422,85.2671203613281" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="37">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@76" Category="References" Bounds="426.594970703125,137.347106933594,500.804809570313,27.6527862548828" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="58">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@28" Target="@79" Category="References" Bounds="114.834930419922,189.999893188477,251.241912841797,136.524307250977" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="20">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@29" Target="@13" Category="CodeSchema_Calls" Bounds="500.92822265625,80.4701919555664,428.614807128906,250.917442321777" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@29" Target="@18" Category="References" Bounds="908.725830078125,29.5732345581055,137.805053710938,300.426765441895" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@29" Target="@21" Category="References" Bounds="565.582397460938,25.763484954834,387.027160644531,304.236515045166" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@29" Target="@54" Category="References" Bounds="976.981278573793,306.74738895723,20.5250093049958,23.2526110427699" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@3" Target="@6" Category="Implements" Bounds="136.151062011719,187.409271240234,389.781982421875,90.1377258300781" Weight="1" />
+    <Link Source="@30" Target="@13" Category="References" Bounds="484.484252929688,44.865421295166,487.526306152344,10.1341285705566" IsSourceVirtualized="True" Weight="6" />
+    <Link Source="@30" Target="@18" Category="References" Bounds="919.626821364501,28.376967379071,65.7569168196812,26.622582620929" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@30" Target="@27" Category="References" Bounds="119.982162475586,79.9995498657227,852.028579711914,137.525825500488" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="39">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@30" Target="@32" Category="Implements" Bounds="412.261627197266,79.9995498657227,559.749114990234,27.2446823120117" Weight="1" />
+    <Link Source="@30" Target="@62" Category="References" Bounds="1008.66419205765,33.7795395390075,4.77899487898185,21.2200104609925" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="20">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@30" Target="@66" Category="References" Bounds="893.016296386719,79.9995498657227,215.287902832031,296.753074645996" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@30" Target="@67" Category="CodeSchema_Calls" Bounds="1002.099609375,79.9995498657227,104.279663085938,408.376335144043" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@31" Target="@13" Category="References" Bounds="500.92822265625,80.4701919555664,153.364807128906,84.5296096801758" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@31" Target="@29" Category="References" Bounds="746.506652832031,189.999801635742,201.109008789063,137.902816772461" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@32" Target="@13" Category="References" Bounds="381.214562265519,85.171952217026,35.3539654601929,24.8278334972598" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@32" Target="@27" Category="References" Bounds="141.552352905273,134.999786376953,207.543350219727,83.5441589355469" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@33" Target="@23" Category="InheritsFrom" Bounds="502.394775390625,357.312622070313,228.806030273438,137.687683105469" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@34" Target="@15" Category="InheritsFrom" Bounds="342.027557373047,413.720428466797,95.0332641601563,81.2798767089844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@35" Target="@23" Category="InheritsFrom" Bounds="380.899169921875,359.08642578125,27.3995971679688,190.914001464844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@36" Target="@51" Category="References" Bounds="629.904296875,77.3478164672852,344.7744140625,85.3357467651367" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@37" Target="@13" Category="CodeSchema_ReturnTypeLink" Bounds="466.181180359153,85.296361313534,33.9355932861072,24.7033422578946" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@38" Target="@57" Category="References" Bounds="105.353335362789,137.911507827429,79.2259735324072,27.0883778868566" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@38" Target="@61" Category="References" Bounds="284.930633544922,82.3508605957031,379.020904541016,85.5127258300781" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@40" Target="@55" Category="References" Bounds="65.4888381958008,30.5397758483887,145.960227966309,244.460315704346" IsSourceVirtualized="True" Weight="4" />
+    <Link Source="@42" Target="@68" Category="References" Bounds="450.920013427734,247.715179443359,388.074737548828,194.141906738281" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@43" Target="@76" Category="References" Bounds="638.159057617188,134.346038818359,272.721618652344,87.5871429443359" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@44" Target="@18" Category="References" Bounds="286.282409667969,29.1830596923828,562.320373535156,300.817031860352" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@44" Target="@21" Category="References" Bounds="286.282409667969,33.9181938171387,224.418762207031,296.081897735596" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@44" Target="@62" Category="References" Bounds="286.282409667969,24.0259418487549,662.282165527344,305.974149703979" IsSourceVirtualized="True" Weight="8" />
+    <Link Source="@45" Target="@13" Category="References" Bounds="499.86990145602,81.4214229134219,119.340951027279,28.5782806580067" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@45" Target="@79" Category="References" Bounds="114.834930419922,132.134017944336,494.953460693359,194.390182495117" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@46" Target="@47" Category="CodeSchema_Calls" Bounds="599.175842285156,24.9995040893555,420.618347167969,576.001777648926" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@47" Target="@23" Category="InheritsFrom" Bounds="502.394775390625,357.312622070313,371.044982910156,247.687866210938" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@5" Target="@6" Category="Implements" Bounds="113.097839355469,192.932723999023,54.7059326171875,247.067672729492" Weight="1" />
+    <Link Source="@50" Target="@13" Category="CodeSchema_Calls" Bounds="359.856666666667,67.4996409673554,21.0000000000017,1.29000897430842E-05" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@50" Target="@18" Category="References" Bounds="347.615447998047,28.1427440643311,493.106475830078,26.8569431304932" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@50" Target="@25" Category="CodeSchema_Calls" Bounds="286.623008592588,32.6688360219887,13.7138235465055,22.3308496922971" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@50" Target="@36" Category="Implements" Bounds="359.765167236328,75.9518890380859,157.159637451172,14.1819000244141" Weight="1" />
+    <Link Source="@50" Target="@42" Category="References" Bounds="359.698547363281,76.2471771240234,505.366027832031,361.770736694336" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@46" Category="CodeSchema_Calls" Bounds="359.709555301258,21.7957705968843,219.75782048289,36.9999749609735" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@50" Target="@49" Category="CodeSchema_Calls" Bounds="359.698547363281,76.2471771240234,337.7294921875,140.520904541016" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@50" Target="@51" Category="References" Bounds="347.61572265625,79.9996871948242,627.06298828125,82.6838760375977" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@55" Category="References" Bounds="93.4421178629593,23.0699051706816,163.746013232882,33.9057567291989" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@58" Category="References" Bounds="297.181732177734,79.9996871948242,42.0540466308594,301.223518371582" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@62" Category="References" Bounds="347.615447998047,28.0814895629883,616.246429443359,26.9181976318359" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@66" Category="References" Bounds="359.698547363281,76.2471771240234,455.154724121094,306.925735473633" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@68" Category="References" Bounds="294.142639160156,79.9996871948242,62.3627319335938,137.144218444824" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@50" Target="@77" Category="CodeSchema_Calls" Bounds="347.615447998047,44.865421295166,472.029632568359,10.1342658996582" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@13" Category="CodeSchema_Calls" Bounds="484.477630615234,82.9631805419922,498.897918701172,82.0365142822266" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@51" Target="@25" Category="CodeSchema_Calls" Bounds="319.741088867188,27.8897476196289,663.634460449219,137.10994720459" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@37" Category="References" Bounds="565.740356445313,137.643020629883,416.178833007813,27.3566741943359" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@51" Target="@46" Category="CodeSchema_Calls" Bounds="689.316040039063,24.0854320526123,294.059509277344,140.914262771606" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@49" Category="CodeSchema_Calls" Bounds="812.588552350512,189.668639606615,153.145646289798,28.8430418716769" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@54" Category="References" Bounds="972.835804516325,189.9997,49.5159975908815,77.4184434623857" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@51" Target="@55" Category="References" Bounds="79.7412261962891,28.3851585388184,903.634323120117,136.6145362854" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@51" Target="@57" Category="References" Bounds="107.770919799805,137.632186889648,874.14826965332,27.3675079345703" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@61" Category="References" Bounds="785.214599609375,79.4318695068359,198.160949707031,85.5678253173828" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@51" Target="@62" Category="References" Bounds="1035.515625,29.2040882110596,51.1318359375,135.795606613159" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@51" Target="@68" Category="CodeSchema_Calls" Bounds="460.337677001953,188.134201049805,503.290191650391,29.6515197753906" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@51" Target="@76" Category="References" Bounds="998.818427263414,141.749679515702,20.504385788575,23.2500204842985" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@51" Target="@77" Category="CodeSchema_Calls" Bounds="877.690307617188,87.9109268188477,105.685241699219,77.0887680053711" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@52" Target="@13" Category="CodeSchema_Calls" Bounds="445.384948730469,88.8710327148438,180.054809570313,296.129119873047" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@52" Target="@37" Category="References" Bounds="563.87109375,137.824005126953,154.249755859375,247.176147460938" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="44">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@55" Target="@25" Category="References" Bounds="84.7147216796875,20.8447189331055,137.90803527832,14.2890472412109" IsSourceVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@55" Target="@46" Category="References" Bounds="71.4022903442383,24.9995861053467,523.644828796387,10.1341648101807" IsSourceVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@55" Target="@49" Category="References" Bounds="84.4199676513672,21.8790874481201,601.679275512695,195.635637283325" IsSourceVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@55" Target="@5" Category="Implements" Bounds="-10.1341819763184,24.9995861053467,51.8027076721191,412.051713943481" Weight="1" />
+    <Link Source="@55" Target="@6" Category="Implements" Bounds="-10.1341819763184,24.9995861053467,32.240930557251,137.131120681763" Weight="1" />
+    <Link Source="@55" Target="@65" Category="References" Bounds="66.2394714355469,24.9995861053467,300.766906738281,247.625535964966" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@56" Target="@3" Category="InheritsFrom" Bounds="183.299728393555,24.9999008178711,389.130264282227,244.754615783691" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@58" Target="@16" Category="References" Bounds="146.557312011719,86.6841812133789,89.9411926269531,298.316032409668" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@58" Target="@40" Category="References" Bounds="293.571136474609,302.771392822266,52.9897155761719,82.2288208007813" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@58" Target="@55" Category="References" Bounds="65.4888381958008,30.5397758483887,171.009666442871,354.460437774658" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="29">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@58" Target="@8" Category="InheritsFrom" Bounds="323.021514892578,410.000122070313,156.678527832031,192.255798339844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="(@1 Namespace=App.Infrastructure Type=InfrastructureException)" Category="CodeSchema_Calls" Bounds="137.401657104492,134.999710083008,678.958755493164,357.118789672852" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@59" Target="@11" Category="CodeSchema_Calls" Bounds="156.027526855469,134.999710083008,660.332885742188,412.132431030273" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@59" Target="@16" Category="References" Bounds="217.394775390625,82.9577178955078,568.580505371094,27.0419845581055" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@25" Category="CodeSchema_Calls" Bounds="319.741088867188,27.8897476196289,460.859741210938,82.1099548339844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@59" Target="@3" Category="CodeSchema_Calls" Bounds="618.141662597656,134.999710083008,198.21875,133.630630493164" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@59" Target="@37" Category="References" Bounds="585.534362792969,99.8655242919922,178.247375488281,13.5083694458008" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="28">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@38" Category="Implements" Bounds="276.786956787109,134.999710083008,509.188323974609,27.5652008056641" Weight="1" />
+    <Link Source="@59" Target="@40" Category="References" Bounds="326.734497070313,132.500137329102,437.445617675781,143.932754516602" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@43" Category="References" Bounds="639.289184570313,134.999710083008,177.071228027344,83.1689147949219" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@44" Category="References" Bounds="294.413696289063,132.500137329102,469.766418457031,193.642227172852" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@46" Category="CodeSchema_Calls" Bounds="689.317016601563,24.0806999206543,130.618469238281,85.919002532959" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@59" Target="@49" Category="CodeSchema_Calls" Bounds="753.918808301292,134.999703571429,62.281167111674,77.9682195181394" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@59" Target="@54" Category="References" Bounds="871.167785644531,134.999710083008,117.439758300781,132.014846801758" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@55" Category="References" Bounds="79.7412261962891,28.3851585388184,700.859603881836,81.6145439147949" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="31">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@56" Category="References" Bounds="208.227310180664,23.0748310089111,572.373519897461,86.9248714447021" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@57" Category="References" Bounds="107.765022277832,99.8655395507813,678.210258483887,10.134162902832" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="49">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@61" Category="References" Bounds="751.264044401059,84.104287454422,50.5297120678691,25.8954161170066" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="54">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@62" Category="References" Bounds="868.649597167969,30.9254016876221,114.16015625,79.0743007659912" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="13">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@59" Target="@68" Category="CodeSchema_Calls" Bounds="479.478210449219,132.500137329102,284.701904296875,88.3258972167969" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@59" Target="@76" Category="References" Bounds="888.86,122.499674773502,21.0000000000005,7.22744501047146E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="32">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@60" Target="@11" Category="CodeSchema_Calls" Bounds="156.027526855469,242.979858398438,682.380920410156,304.152282714844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5" />
+    <Link Source="@60" Target="@16" Category="References" Bounds="234.892456054688,77.7263793945313,626.662170410156,142.273422241211" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@60" Target="@25" Category="CodeSchema_Calls" Bounds="319.741088867188,27.8897476196289,541.813537597656,192.110054016113" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@60" Target="@3" Category="CodeSchema_Calls" Bounds="677.964390535869,244.54688773302,162.379521448093,28.9359823201756" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@60" Target="@40" Category="Implements" Bounds="327.230041503906,244.999801635742,530.799011230469,31.3665313720703" Weight="1" />
+    <Link Source="@60" Target="@46" Category="CodeSchema_Calls" Bounds="638.986511230469,33.8214950561523,222.568115234375,186.17830657959" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@60" Target="@49" Category="CodeSchema_Calls" Bounds="816.423333333332,232.499820787687,21,6.18988198652914E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3" />
+    <Link Source="@60" Target="@55" Category="References" Bounds="79.7412261962891,28.3851585388184,781.813400268555,191.614643096924" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="34">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@60" Target="@56" Category="References" Bounds="208.227310180664,23.0748310089111,653.32731628418,196.924970626831" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="34">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@60" Target="@63" Category="References" Bounds="86.9804763793945,83.1654205322266,774.574150085449,136.834381103516" IsSourceVirtualized="True" Weight="4" />
+    <Link Source="@60" Target="@65" Category="References" Bounds="482.124572753906,244.999801635742,375.904479980469,27.8839874267578" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@61" Target="@57" Category="References" Bounds="113.210395812988,79.9996032714844,567.818840026855,27.5907592773438" IsSourceVirtualized="True" Weight="4" />
+    <Link Source="@61" Target="@76" Category="References" Bounds="774.914218061197,79.2222471189769,138.988662265961,29.0684893343795" IsSourceVirtualized="True" Weight="4" />
+    <Link Source="@62" Target="@13" Category="References" Bounds="484.481231689453,24.9994506835938,482.462127685547,27.0468673706055" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@62" Target="@18" Category="CodeSchema_Calls" Bounds="935.869999999999,12.4994703945605,21.000000000001,9.11214007537353E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@62" Target="@21" Category="CodeSchema_Calls" Bounds="552.248962402344,-10.1346788406372,414.694213867188,10.1341288406402" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@62" Target="@33" Category="CodeSchema_Calls" Bounds="862.08544921875,24.9994506835938,243.017456054688,470.006439208984" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@62" Target="@37" Category="References" Bounds="573.626586914063,24.9994506835938,393.316772460938,82.7144317626953" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@62" Target="@5" Category="Implements" Bounds="134.296127319336,24.9994506835938,855.287307739258,411.897888183594" Weight="1" />
+    <Link Source="@62" Target="@52" Category="References" Bounds="659.075805664063,24.9994506835938,330.507629394531,352.657745361328" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="12">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@62" Target="@6" Category="Implements" Bounds="113.164978027344,24.9994506835938,853.778381347656,137.283157348633" Weight="1" />
+    <Link Source="@62" Target="@64" Category="CodeSchema_Calls" Bounds="723.230041503906,24.9994506835938,381.872863769531,523.826293945313" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@62" Target="@68" Category="References" Bounds="479.478210449219,20.9033641815186,477.474182128906,199.92267036438" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@62" Target="@77" Category="References" Bounds="906.16767397605,24.99945,66.5105191832165,26.6524178396791" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@63" Target="@3" Category="InheritsFrom" Bounds="71.296875,80.0000534057617,501.095275878906,189.812110900879" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@64" Target="@23" Category="InheritsFrom" Bounds="502.394775390625,357.312622070313,114.679626464844,192.687805175781" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@66" Target="@16" Category="References" Bounds="224.871215820313,82.6186752319336,598.794616699219,302.381416320801" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@66" Target="@18" Category="References" Bounds="753.375793457031,29.1830596923828,154.758361816406,355.817031860352" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@66" Target="@21" Category="References" Bounds="513.475219726563,33.9995040893555,310.190612792969,351.000587463379" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@66" Target="@44" Category="References" Bounds="341.601440429688,356.326110839844,482.803649902344,28.6739807128906" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="8">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@66" Target="@62" Category="References" Bounds="889.413635253906,28.3310451507568,210.872985839844,356.669046401978" IsSourceVirtualized="True" Weight="8" />
+    <Link Source="@66" Target="@8" Category="InheritsFrom" Bounds="450.410064697266,410,399.218292236328,192.257751464844" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@67" Target="@15" Category="InheritsFrom" Bounds="543.142988788348,412.009041152107,383.580850777464,82.9909588478926" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@68" Target="@35" Category="CodeSchema_Calls" Bounds="342.658264160156,245,65.6404418945313,299.994750976563" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@68" Target="@5" Category="Implements" Bounds="130.411178588867,245,247.36994934082,191.552764892578" Weight="1" />
+    <Link Source="@68" Target="@6" Category="Implements" Bounds="135.477409627025,189.181183320289,199.728901978167,32.3842412111202" Weight="1" />
+    <Link Source="@68" Target="@73" Category="CodeSchema_Calls" Bounds="177.525634765625,245,200.255493164063,412.461975097656" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@69" Target="@3" Category="InheritsFrom" Bounds="303.007283764038,242.762848457134,214.284178789613,32.3541008659799" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@70" Target="@11" Category="CodeSchema_Calls" Bounds="156.028381347656,465.000305175781,104.917297363281,82.1343383789063" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@70" Target="@16" Category="References" Bounds="147.757369995117,86.7742614746094,105.452545166016,353.226043701172" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@70" Target="@3" Category="CodeSchema_Calls" Bounds="325.420013427734,305.863128662109,252.499725341797,134.137176513672" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@70" Target="@68" Category="References" Bounds="325.420013427734,249.184677124023,44.3931579589844,190.815628051758" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@70" Target="@69" Category="References" Bounds="279.639343261719,247.974853515625,83.2289428710938,192.025451660156" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@70" Target="@8" Category="InheritsFrom" Bounds="328.718536376953,465.000213623047,151.308776855469,137.255706787109" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@71" Target="@42" Category="Implements" Bounds="566.977722167969,429.866058349609,262.076843261719,11.7035522460938" Weight="1" />
+    <Link Source="@71" Target="@48" Category="References" Bounds="126.15111541748,302.415100097656,291.418922424316,139.811279296875" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@71" Target="@68" Category="References" Bounds="450.920013427734,247.715179443359,121.470855712891,192.285125732422" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="20">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@71" Target="@70" Category="References" Bounds="395.73,452.500303571429,20.9999999999999,0" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@71" Target="@72" Category="References" Bounds="596.18,452.500275402608,21,5.34247215000505E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@72" Target="(@1 @41 Type=LuhnProvider)" Category="CodeSchema_Calls" Bounds="494.739593505859,195.074920654297,170.188995361328,244.925323486328" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@72" Target="(@1 @41 Type=NumberGenerator)" Category="CodeSchema_Calls" Bounds="582.122497558594,360.178009033203,82.8060913085938,79.8222351074219" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@72" Target="@48" Category="References" Bounds="131.596588134766,302.143585205078,533.332000732422,137.856658935547" IsSourceVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@73" Target="@23" Category="InheritsFrom" Bounds="148.846664428711,359.072174072266,258.540634155273,300.928436279297" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@13" Category="CodeSchema_Calls" Bounds="500.92822265625,80.4701919555664,297.912780761719,86.6903457641602" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="6" />
+    <Link Source="@74" Target="@16" Category="References" Bounds="234.892456054688,77.7263793945313,582.21826171875,87.2733764648438" IsSourceVirtualized="True" Weight="2" />
+    <Link Source="@74" Target="@18" Category="References" Bounds="873.905395507813,29.5732345581055,62.2321166992188,135.42652130127" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@21" Category="References" Bounds="565.582397460938,25.763484954834,266.047241210938,139.236270904541" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@37" Category="References" Bounds="587.679087109544,133.626233767194,211.262416213978,33.3938411955137" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="22">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@43" Category="Implements" Bounds="645.196520788932,189.515726019017,155.613995697607,29.0217139508052" Weight="1" />
+    <Link Source="@74" Target="@44" Category="References" Bounds="344.669738769531,187.91535949707,454.224975585938,143.391250610352" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@54" Category="References" Bounds="912.885681152344,189.999755859375,75.7218627929688,77.0148010253906" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="14">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@62" Category="References" Bounds="873.547668457031,29.9465847015381,103.738159179688,135.053171157837" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="27">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@67" Category="CodeSchema_Calls" Bounds="912.885681152344,189.999755859375,186.328552246094,298.376129150391" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@74" Target="@68" Category="CodeSchema_Calls" Bounds="460.3369140625,189.999755859375,356.774047851563,27.7829895019531" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@74" Target="@76" Category="References" Bounds="891.74033060546,138.839178898747,55.4611026408678,26.1605711012535" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="47">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@74" Target="@77" Category="CodeSchema_Calls" Bounds="878.276184082031,87.3872604370117,17.309814453125,77.6124954223633" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@75" Target="@11" Category="CodeSchema_Calls" Bounds="156.027526855469,297.603729248047,548.023986816406,249.528411865234" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="14" />
+    <Link Source="@75" Target="@13" Category="CodeSchema_Calls" Bounds="494.489440917969,82.4590377807617,231.499328613281,192.540870666504" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9" />
+    <Link Source="@75" Target="@16" Category="References" Bounds="224.871215820313,82.6186752319336,517.498046875,192.381233215332" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="16">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@18" Category="References" Bounds="753.375793457031,29.1830596923828,95.2269897460938,245.816848754883" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="26">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@19" Category="References" Bounds="753.375793457031,32.9091682434082,64.1817016601563,242.090740203857" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="62">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@21" Category="References" Bounds="513.562622070313,33.9990768432617,212.426147460938,241.000831604004" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="16">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@22" Category="References" Bounds="443.908203125,27.2586059570313,282.08056640625,247.741302490234" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="55">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@3" Category="CodeSchema_Calls" Bounds="682.32,287.499920969588,21.0000000000001,5.8610648920876E-06" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="13" />
+    <Link Source="@75" Target="@37" Category="References" Bounds="563.87353515625,137.816635131836,162.115234375,137.18327331543" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="48">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@44" Category="Implements" Bounds="322.294006347656,299.999908447266,403.695007324219,27.8399963378906" Weight="1" />
+    <Link Source="@75" Target="@52" Category="References" Bounds="696.264343261719,299.999908447266,68.4771118164063,78.2747497558594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@62" Category="References" Bounds="787.340637207031,30.4222526550293,192.750610351563,244.577655792236" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="44">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@63" Category="References" Bounds="102.669975280762,77.9859237670898,639.699287414551,197.013984680176" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="41">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@75" Target="@68" Category="CodeSchema_Calls" Bounds="479.700265936761,243.777110018836,224.874196067257,32.9105482749084" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@75" Target="@77" Category="CodeSchema_Calls" Bounds="753.375793457031,82.4759902954102,64.1817016601563,192.523918151855" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@76" Target="@13" Category="CodeSchema_Calls" Bounds="484.477630615234,82.9631805419922,451.610382080078,27.0364685058594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4" />
+    <Link Source="@76" Target="@37" Category="References" Bounds="565.739990234375,99.8655242919922,370.348022460938,10.1341247558594" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="10">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@76" Target="@54" Category="References" Bounds="952.38916015625,134.999649047852,36.2183837890625,132.014907836914" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@76" Target="@62" Category="References" Bounds="945.869140625,30.4222526550293,34.2221069335938,79.5773963928223" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="11">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@76" Target="@68" Category="CodeSchema_Calls" Bounds="479.478210449219,132.856567382813,440.278381347656,87.9694671630859" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@76" Target="@77" Category="CodeSchema_Calls" Bounds="900.928833519456,83.8766226779061,54.7261128286416,26.1230273220939" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@77" Target="@73" Category="CodeSchema_Calls" Bounds="177.525634765625,79.9996032714844,645.358459472656,577.462371826172" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@78" Target="@13" Category="References" Bounds="263.485583958564,81.3764944373198,120.047420800881,28.623291276966" IsSourceVirtualized="True" Weight="6" />
+    <Link Source="@78" Target="@21" Category="References" Bounds="269.086120605469,25.2115345001221,191.856262207031,85.4713573455811" IsSourceVirtualized="True" Weight="1" />
+    <Link Source="@78" Target="@45" Category="Implements" Bounds="250.070419311523,99.8655395507813,372.361404418945,10.1342468261719" Weight="1" />
+    <Link Source="@78" Target="@62" Category="References" Bounds="250.070419311523,27.8225269317627,708.327163696289,82.1772594451904" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="20">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@78" Target="@66" Category="References" Bounds="271.464965820313,130.986679077148,543.388305664063,252.186233520508" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@78" Target="@67" Category="CodeSchema_Calls" Bounds="271.464965820313,130.986679077148,643.681396484375,362.19367980957" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="1" />
+    <Link Source="@78" Target="@79" Category="References" Bounds="114.811943054199,134.999786376953,71.4042129516602,191.470031738281" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="39">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@79" Target="@13" Category="References" Bounds="106.533271789551,80.2806091308594,275.846458435059,249.719573974609" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="3">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@79" Target="@21" Category="References" Bounds="106.533271789551,33.915470123291,404.147941589355,296.084712982178" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="7">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@79" Target="@54" Category="References" Bounds="152.430603027344,302.052551269531,745.631286621094,30.6952209472656" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@8" Target="@10" Category="Implements" Bounds="431.782470703125,527.597473144531,82.5863037109375,77.4031372070313" Weight="1" />
+    <Link Source="@8" Target="@6" Category="CodeSchema_Calls" Bounds="103.846061706543,193.272003173828,216.494728088379,411.728607177734" IsSourceVirtualized="True" IsTargetVirtualized="True" Weight="2" />
+    <Link Source="@8" Target="@9" Category="Implements" Bounds="255.63,617.50064021061,20.5000000000005,6.09430867370975E-06" Weight="1" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Enum" Label="Enum" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Enum" NavigationActionLabel="Enums" />
+    <Category Id="CodeSchema_Interface" Label="Interface" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" NavigationActionLabel="Interfaces" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="Return" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Return types" OutgoingActionLabel="Return types" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+    <Category Id="Implements" Label="Implements" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Implemented by" OutgoingActionLabel="Implements" />
+    <Category Id="InheritsFrom" Label="Inherits From" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Inherited By" OutgoingActionLabel="Inherits From" />
+    <Category Id="References" Label="References" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsAbstract" Label="Is Abstract" Description="Flag to indicate member is 'Abstract' does not provide a full implementation" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsFinal" Label="Is Final" Description="Flag to indicate the member is 'Final' and cannot be derived from" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsInternal" Label="Is Internal" Description="Flag to indicate the method is 'Internal'" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Is Static" Description="Flag to indicate the member is a static member" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="Delayed Child Nodes State" Description="Unspecified if the delayed child nodes state is not specified. NotFetched if the group contains child nodes that are not fetched into the graph yet. Fetched if the group has all its delayed child nodes already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Delayed Cross-Group Links State" Description="Unspecified if the delayed cross-group links state is not specified. NotFetched if delayed cross-group links on this node are not fetched into the graph yet. Fetched if all delayed cross-group links have already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilterState" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsSourceVirtualized" Label="Link Source Virtualized" Description="If true, the link source end contains data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="IsTargetVirtualized" Label="Link Target Virtualized" Description="If true, the link target end contains data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Weight" Description="Weight" DataType="System.Double" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="GenericParameterCount" Label="Generic Parameter Count" ValueType="System.String" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(cb4553d1-0214-4348-a6e8-f852341b5ab9.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=HPoc.API.App.Infrastructure.Entities" />
+    <Alias n="3" Id="(@1 @2 Type=(Name=BaseEntity GenericParameterCount=1))" />
+    <Alias n="4" Id="Namespace=App.Domains" />
+    <Alias n="5" Id="(@1 @4 Type=(Name=IAggregateRoot GenericParameterCount=1))" />
+    <Alias n="6" Id="(@1 @4 Type=(Name=IEntity GenericParameterCount=1))" />
+    <Alias n="7" Id="GenericParameterCount=2" />
+    <Alias n="8" Id="(@1 @4 Type=(Name=InMemoryRepository @7))" />
+    <Alias n="9" Id="(@1 @4 Type=(Name=IReadOnlyRepository @7))" />
+    <Alias n="10" Id="(@1 @4 Type=(Name=IRepository @7))" />
+    <Alias n="11" Id="(@1 Namespace=HPoc.API.App.Infrastructure.InMemoryStore Type=(Name=WalletJsonStore @7))" />
+    <Alias n="12" Id="Namespace=App.Domains.ValueObjects" />
+    <Alias n="13" Id="(@1 @12 Type=Amount)" />
+    <Alias n="14" Id="Namespace=App.Applications" />
+    <Alias n="15" Id="(@1 @14 Type=ApplicationException)" />
+    <Alias n="16" Id="(@1 Namespace=App.Infrastructure.InMemoryStore Type=Context)" />
+    <Alias n="17" Id="Namespace=App.Domains.Wallets" />
+    <Alias n="18" Id="(@1 @17 Type=Credit)" />
+    <Alias n="19" Id="(@1 @2 Type=Credit)" />
+    <Alias n="20" Id="(@1 Namespace=App.Applications.UseCases.Deactivate Type=DeactivateAccount)" />
+    <Alias n="21" Id="(@1 @17 Type=Debit)" />
+    <Alias n="22" Id="(@1 @2 Type=Debit)" />
+    <Alias n="23" Id="(@1 @4 Type=DomainException)" />
+    <Alias n="24" Id="Namespace=App.Domains.Users" />
+    <Alias n="25" Id="(@1 @24 Type=Email)" />
+    <Alias n="26" Id="(@1 @24 Type=EmailShouldNotBeEmptyException)" />
+    <Alias n="27" Id="(@1 Namespace=App.Applications.UseCases.FundWallets Type=FundingResult)" />
+    <Alias n="28" Id="(@1 Namespace=App.Applications.UseCases.Transfer Type=FundTransfer)" />
+    <Alias n="29" Id="(@1 Namespace=App.Applications.UseCases.Transfer Type=FundTransferResult)" />
+    <Alias n="30" Id="(@1 Namespace=App.Applications.UseCases.FundWallets Type=FundWallet)" />
+    <Alias n="31" Id="(@1 Namespace=App.Applications.UseCases.Transfer Type=IFundTransfer)" />
+    <Alias n="32" Id="(@1 Namespace=App.Applications.UseCases.FundWallets Type=IFundWallet)" />
+    <Alias n="33" Id="(@1 @17 Type=InsuficientFundsException)" />
+    <Alias n="34" Id="(@1 @14 Type=InvalidTransferException)" />
+    <Alias n="35" Id="(@1 @12 Type=InvalidWalletNumberException)" />
+    <Alias n="36" Id="(@1 Namespace=App.Applications.UseCases.Registers Type=IRegister)" />
+    <Alias n="37" Id="(@1 @17 Type=ITransaction)" />
+    <Alias n="38" Id="(@1 Namespace=App.Applications.UseCases.GetUsers Type=IUserQueries)" />
+    <Alias n="39" Id="Namespace=HPoc.API.App.Infrastructure.Repositories" />
+    <Alias n="40" Id="(@1 @39 Type=IUserRepository)" />
+    <Alias n="41" Id="Namespace=App.Applications.WalletNumbers" />
+    <Alias n="42" Id="(@1 @41 Type=IWalletNumberHandler)" />
+    <Alias n="43" Id="(@1 Namespace=App.Applications.UseCases.GetWallets Type=IWalletQueries)" />
+    <Alias n="44" Id="(@1 @39 Type=IWalletRepository)" />
+    <Alias n="45" Id="(@1 Namespace=App.Applications.UseCases.Withdrawal Type=IWithdrawal)" />
+    <Alias n="46" Id="(@1 @24 Type=Name)" />
+    <Alias n="47" Id="(@1 @24 Type=NameShouldNotBeEmptyException)" />
+    <Alias n="48" Id="(@1 @41 Type=NumberStrategy)" />
+    <Alias n="49" Id="(@1 @24 Type=PhoneNumber)" />
+    <Alias n="50" Id="(@1 Namespace=App.Applications.UseCases.Registers Type=Register)" />
+    <Alias n="51" Id="(@1 Namespace=App.Applications.UseCases.Registers Type=RegisterResult)" />
+    <Alias n="52" Id="(@1 @17 Type=TransactionCollection)" />
+    <Alias n="53" Id="Namespace=App.Applications.Results" />
+    <Alias n="54" Id="(@1 @53 Type=TransactionResult)" />
+    <Alias n="55" Id="(@1 @24 Type=User)" />
+    <Alias n="56" Id="(@1 @2 Type=User)" />
+    <Alias n="57" Id="(@1 @53 Type=UserDetails)" />
+    <Alias n="58" Id="(@1 Namespace=App.Infrastructure.InMemoryStore Type=UserInMemoryStore)" />
+    <Alias n="59" Id="(@1 Namespace=App.Applications.UseCases.GetUsers Type=UserQueries)" />
+    <Alias n="60" Id="(@1 @39 Type=UserRepository)" />
+    <Alias n="61" Id="(@1 @53 Type=UserResult)" />
+    <Alias n="62" Id="(@1 @17 Type=Wallet)" />
+    <Alias n="63" Id="(@1 @2 Type=Wallet)" />
+    <Alias n="64" Id="(@1 @17 Type=WalletCannotBeClosedException)" />
+    <Alias n="65" Id="(@1 @24 Type=WalletCollection)" />
+    <Alias n="66" Id="(@1 Namespace=App.Infrastructure.InMemoryStore Type=WalletInMemoryStore)" />
+    <Alias n="67" Id="(@1 @14 Type=WalletNotFoundException)" />
+    <Alias n="68" Id="(@1 @4 Type=WalletNumber)" />
+    <Alias n="69" Id="(@1 @2 Type=WalletNumber)" />
+    <Alias n="70" Id="(@1 @14 Type=WalletNumberContext)" />
+    <Alias n="71" Id="(@1 @41 Type=WalletNumberHandler)" />
+    <Alias n="72" Id="(@1 @41 Type=WalletNumberProvider)" />
+    <Alias n="73" Id="(@1 @12 Type=WalletNumberShouldNotBeEmptyException)" />
+    <Alias n="74" Id="(@1 Namespace=App.Applications.UseCases.GetWallets Type=WalletQueries)" />
+    <Alias n="75" Id="(@1 @39 Type=WalletRepository)" />
+    <Alias n="76" Id="(@1 @53 Type=WalletResult)" />
+    <Alias n="77" Id="(@1 @12 Type=WalletType)" />
+    <Alias n="78" Id="(@1 Namespace=App.Applications.UseCases.Withdrawal Type=Withdrawal)" />
+    <Alias n="79" Id="(@1 Namespace=App.Applications.UseCases.Withdrawal Type=WithdrawalResult)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Test Project" ValueLabel="Test Project">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Web Project" ValueLabel="Web Project">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows Store Project" ValueLabel="Windows Store Project">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Phone Project" ValueLabel="Phone Project">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Portable Library" ValueLabel="Portable Library">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF Project" ValueLabel="WPF Project">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX Project" ValueLabel="VSIX Project">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Modeling Project" ValueLabel="Modeling Project">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF0E70C0" />
+      <Setter Property="Stroke" Value="#FF0E70C0" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="Has category">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Calls" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Function Pointer" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Field Read" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Field Write" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Return" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="References" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Uses Attribute" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" IsEnabled="false" GroupLabel="Solution Folder" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="Project Reference" ValueLabel="Project Reference">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" IsEnabled="false" GroupLabel="External Reference" ValueLabel="External Reference">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="cb4553d1-0214-4348-a6e8-f852341b5ab9.OutputPathUri" Value="file:///C:/Users/Surface/Documents/Clients/HalalPay/HPoc/HPoc/hpoc/HPoc.API/bin/Debug/net5.0/HPoc.API.dll" />
+  </Paths>
+</DirectedGraph>

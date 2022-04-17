@@ -13,7 +13,7 @@ namespace HPoc.API.Modules.Users.Register
             _register = register;
         }
         [HttpPost("register", Name = "Register")]
-        public async Task<IActionResult> Post([FromBody] RegisterRequest request)
+        public async Task<IActionResult> Post([FromBody]RegisterRequest request)
         {
             var result = await _register.Execute(request.Name, request.Email, request.PhoneNumber,
                 request.DateOfBirth, request.InitialAmount);

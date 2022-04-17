@@ -1,6 +1,14 @@
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.exe
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\DB\Credits.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\DB\Debits.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\DB\Users.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\DB\WalletNumbers.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\DB\Wallets.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HALALPOCDB\Collection.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HALALPOCDB\Users.json
+C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HALALPOCDB\Wallets.json
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.dll
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.deps.json
 C:\Users\Surface\Documents\Clients\HalalPay\HPoc\HPoc\hpoc\HPoc.API\obj\Release\net5.0\PubTmp\Out\HPoc.API.runtimeconfig.json

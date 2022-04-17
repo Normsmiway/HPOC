@@ -1,20 +1,24 @@
-﻿namespace App.Domains.Users
+﻿
+using Newtonsoft.Json;
+
+namespace App.Domains.Users
 {
     public sealed class Name
     {
-        private string _text;
+        public string  Value { get; private set; }
 
-        public Name(string text)
+        [JsonConstructor]
+        public Name(string value)
         {
-            if (string.IsNullOrWhiteSpace(text))
+            if (string.IsNullOrWhiteSpace(value))
                 throw new NameShouldNotBeEmptyException("The 'Name' field is required");
 
-            this._text = text;
+            this.Value = value;
         }
 
         public override string ToString()
         {
-            return _text.ToString();
+            return Value.ToString();
         }
 
         public static implicit operator Name(string text)
@@ -24,7 +28,7 @@
 
         public static implicit operator string(Name name)
         {
-            return name._text;
+            return name.Value;
         }
 
         public override bool Equals(object obj)
@@ -41,15 +45,15 @@
 
             if (obj is string)
             {
-                return obj.ToString() == _text;
+                return obj.ToString() == Value;
             }
 
-            return ((Name)obj)._text == _text;
+            return ((Name)obj).Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return _text.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

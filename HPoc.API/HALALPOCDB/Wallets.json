@@ -1,1 +1,38 @@
-{"5ba5c779-1ec6-4a1d-8c45-8b79752d3389":{"Id":"5ba5c779-1ec6-4a1d-8c45-8b79752d3389","UserId":"0e9972f5-181d-473b-8b9a-b6d42aaa8816","WalletNumber":{"Id":"fa8710ed-d896-4436-b39e-0c214c3d0e41","Text":"HAL59923"},"WalletType":{"Text":"Default"},"CurrencyCode":"NGN"},"dbc4a773-5f34-4aa9-9e80-84d06e98e72c":{"Id":"dbc4a773-5f34-4aa9-9e80-84d06e98e72c","UserId":"64eb693b-aee9-40eb-89c8-26d486059044","WalletNumber":{"Id":"5ed77315-6596-40a0-b690-7c508da1a042","Text":"HAL67546"},"WalletType":{"Text":"Default"},"CurrencyCode":"NGN"},"071e3036-56d8-4ae8-8c1a-cf84ed731b0b":{"Id":"071e3036-56d8-4ae8-8c1a-cf84ed731b0b","UserId":"2db752f5-5ab3-45b8-8576-8ac8fc2a8d07","WalletNumber":{"Id":"b84beb91-c36c-4257-a865-5bf6c6906124","Text":"HAL32201"},"WalletType":{"Text":"Default"},"CurrencyCode":"NGN"}}
+{
+  "2761efae-289f-4048-8503-7d24f2380af1": {
+    "Id": "2761efae-289f-4048-8503-7d24f2380af1",
+    "UserId": "ef7a9624-4dcb-46a1-841b-9c29a5312ba0",
+    "WalletNumber": {
+      "Id": "baf784d4-e0ff-4181-a92c-8a3cadc562fd",
+      "Value": "HAL84202"
+    },
+    "WalletType": {
+      "Value": "Default"
+    },
+    "CurrencyCode": "NGN"
+  },
+  "2b35aaec-27ef-46b5-9efa-815365def528": {
+    "Id": "2b35aaec-27ef-46b5-9efa-815365def528",
+    "UserId": "6222e530-957d-4020-ad92-9c6c48a2dc03",
+    "WalletNumber": {
+      "Id": "12509711-da56-4242-98ef-66f214cee403",
+      "Value": "HAL37200"
+    },
+    "WalletType": {
+      "Value": "Default"
+    },
+    "CurrencyCode": "NGN"
+  },
+  "0400dcc0-ce55-4da5-a83c-4a7afe9bae0e": {
+    "Id": "0400dcc0-ce55-4da5-a83c-4a7afe9bae0e",
+    "UserId": "3e2b6288-c089-4aa0-bc6b-5e636a51e66b",
+    "WalletNumber": {
+      "Id": "3c5bbe06-e3ec-4d47-818d-97dd60e1a2aa",
+      "Value": "HAL53603"
+    },
+    "WalletType": {
+      "Value": "Default"
+    },
+    "CurrencyCode": "NGN"
+  }
+}

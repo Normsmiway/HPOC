@@ -1,4 +1,4 @@
-﻿using App.Domains.ValueObjects;
+﻿using App.Domains;
 using System.Threading.Tasks;
 
 namespace App.Applications.WalletNumbers
@@ -14,12 +14,12 @@ namespace App.Applications.WalletNumbers
         private int iterations = 0;
         private readonly int incrementalValue = 0;
         private readonly string fallBackStrategy = string.Empty;
-
+        private int maxLength;
         public WalletNumberHandler(WalletNumberContext context)
         {
             bool useRaw = false;
             fallBackStrategy = "Luhn";
-            int maxLength = 5;
+             maxLength = 5;
             prefix = "HAL";
             maxNumberOfterations =10;
             incrementalValue = 1;
@@ -41,7 +41,7 @@ namespace App.Applications.WalletNumbers
         /// <returns>string</returns>
         public async Task<WalletNumber> GenerateAsync()
         {
-            #region NOTE: TODO
+            #region --->|>|>|>---NOTE: TODO
             //exit point from a recursive function: use other strategy after
             //failure to generate unique pin over certain iterations specified
             //NOTE: This is a point of failure, as the system can't gurantee the 
@@ -60,9 +60,6 @@ namespace App.Applications.WalletNumbers
             iterations += 1;
             return await GenerateAsync();
         }
-
-
-
 
         private async Task<(string, bool)> GeneratePinAsync()
         {
@@ -87,7 +84,7 @@ namespace App.Applications.WalletNumbers
         /// <param name="userId">UserId used in generating user pin</param>
         private async Task<string> GenereteAlphanumericSequence()
         {
-            _provider = new WalletNumberProvider(8, NumberStrategy.Raw);
+            _provider = new WalletNumberProvider(maxLength, NumberStrategy.Raw);
             var param = await GeneratePinAsync();
 
             return param.Item1;
@@ -101,7 +98,7 @@ namespace App.Applications.WalletNumbers
         /// <param name="userId">UserId used in generating user pin</param>
         private async Task<string> GenerateDigitOnlyPin()
         {
-            _provider = new WalletNumberProvider(8+ incrementalValue, NumberStrategy.Luhn);
+            _provider = new WalletNumberProvider(maxLength: maxLength, NumberStrategy.Luhn);
             var param = await GeneratePinAsync();
 
             return param.Item1;

@@ -1,20 +1,22 @@
-﻿namespace App.Domains.Users
+﻿using Newtonsoft.Json;
+
+namespace App.Domains.Users
 {
     public sealed class Email
     {
-        private string _text;
-
-        public Email(string text)
+        public  string Value { get; private set; }
+        [JsonConstructor]
+        public Email(string value)
         {
-            if (string.IsNullOrWhiteSpace(text))
+            if (string.IsNullOrWhiteSpace(value))
                 throw new EmailShouldNotBeEmptyException("The 'Email' field is required");
 
-            this._text = text;
+            this.Value = value;
         }
 
         public override string ToString()
         {
-            return _text.ToString();
+            return Value.ToString();
         }
 
         public static implicit operator Email(string text)
@@ -24,7 +26,7 @@
 
         public static implicit operator string(Email name)
         {
-            return name._text;
+            return name.Value;
         }
 
         public override bool Equals(object obj)
@@ -41,15 +43,15 @@
 
             if (obj is string)
             {
-                return obj.ToString() == _text;
+                return obj.ToString() == Value;
             }
 
-            return ((Email)obj)._text == _text;
+            return ((Email)obj).Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return _text.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

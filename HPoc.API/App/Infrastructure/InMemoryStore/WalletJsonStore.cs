@@ -15,24 +15,24 @@ namespace HPoc.API.App.Infrastructure.InMemoryStore
         private readonly string _filePath;
         private readonly JsonSerializerSettings _jsonSerializerSettings;
         private readonly Dictionary<TId, TEntity> _entities;
-
-        public WalletJsonStore(string filePath)
+        const string baseFilePath = "DB";
+        public WalletJsonStore()
         {
-            _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
+            _filePath = (Path.Combine(baseFilePath, $"{typeof(TEntity).Name}s.json"));
+            EnsureRequiredFilesAreCreated();
+
+
             _entities = new Dictionary<TId, TEntity>();
             _jsonSerializerSettings = new JsonSerializerSettings();
+
             _jsonSerializerSettings.Converters.Add(new StringEnumConverter());
-            if (File.Exists(filePath))
+            if (File.Exists(_filePath))
             {
-                using (var streamReader = new StreamReader(filePath))
+                using (var streamReader = new StreamReader(_filePath))
                 {
                     var json = streamReader.ReadToEnd();
                     _entities = JsonConvert.DeserializeObject<Dictionary<TId, TEntity>>(json, _jsonSerializerSettings) ?? new();
                 }
-            }
-            else
-            {
-                EnsureRequiredFilesAreCreated();  
             }
         }
 

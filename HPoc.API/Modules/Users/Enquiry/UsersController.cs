@@ -65,7 +65,7 @@ namespace HPoc.API.Modules.Users.Enquiry
                         var benref = item.MarchantReference;
                     }
 
-                    var transaction = new TransactionModel(
+                    TransactionModel transaction = new (
                         item.Amount, item.TranactionType,
                         item.TransactionDate,
                         item.Narration,
@@ -73,7 +73,7 @@ namespace HPoc.API.Modules.Users.Enquiry
                         item.MarchantReference);
                     transactions.Add(transaction);
                 }
-                wallets.Add(new WalletDetailsModel(
+                wallets.Add(new(
                     wallet.WalletId,
                     wallet.WalletNumber,
                     wallet.CurrentBalance,

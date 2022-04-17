@@ -1,8 +1,9 @@
-﻿using App.Domains.ValueObjects;
-using System;
+﻿using System;
+using System.Linq;
+using Newtonsoft.Json;
+using App.Domains.ValueObjects;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 namespace App.Domains.Wallets
 {
     public sealed class Wallet : IAggregateRoot<Guid>
@@ -20,8 +21,8 @@ namespace App.Domains.Wallets
                 return readOnly.OrderByDescending(t => t.TransactionDate).Take(take).ToImmutableList();
             return readOnly;
         }
-
-        public Wallet(string userId, WalletNumber number, WalletType type,string currencyCode)
+        [JsonConstructor]
+        private Wallet(string userId, WalletNumber number, WalletType type, string currencyCode)
         {
             Id = Guid.NewGuid();
             WalletNumber = number;
@@ -29,11 +30,18 @@ namespace App.Domains.Wallets
             CurrencyCode = currencyCode;
             _transactions = new TransactionCollection();
             UserId = userId;
+
+            //raise new userwallet created domain event
         }
 
-        public void FundWallet(Amount amount,string marchantrefence)
+        public static Wallet Create(string userId,WalletNumber number,WalletType walletType,string currencyCode)
         {
-            Credit credit = new(Id, amount,marchantrefence);
+            return new(userId, number, walletType, currencyCode);
+        }
+
+        public void FundWallet(Amount amount, string marchantrefence)
+        {
+            Credit credit = new(Id, amount, marchantrefence);
             _transactions.Add(credit);
         }
 
@@ -43,6 +51,8 @@ namespace App.Domains.Wallets
                 throw new InsuficientFundsException($"Insufficient fund ({amount})");
             Debit debit = new(Id, amount, narration);
             _transactions.Add(debit);
+
+            //raise cash withrwal domain event
         }
 
         public Amount GetWalletBalance()
@@ -51,12 +61,14 @@ namespace App.Domains.Wallets
             return totalAmount;
         }
 
-        //public void TransferFund(Guid receivingWalletId, Amount amount, string narration)
-        //{
-        //    Withraw(amount, narration);
-        //    Credit credit = new Credit(receivingWalletId, amount);
+        public void TransferFund(Guid receivingWalletId, Amount amount, string narration, string merchantReference)
+        {
+            Withraw(amount, narration);
+            Credit credit = new(receivingWalletId, amount, merchantReference);
+            _transactions.Add(credit);
 
-        //}
+            //raise cash transfer domain even
+        }
 
         public ITransaction GetLastTransaction()
         {
@@ -67,6 +79,7 @@ namespace App.Domains.Wallets
         {
             if (_transactions.GetCurrentBalance() > 0)
                 throw new WalletCannotBeClosedException("Wallet with available fund cannot not be deactivated");
+            
         }
         public Amount GetTotalIcome()
         {

@@ -12,11 +12,11 @@ namespace App.Domains.Wallets
         public string Reference { get;  init; }
         public string TransactionType { get { return nameof(Credit); } }
         public string Narration { get { return $"Creditd {Amount} into wallet"; }} 
-        public string  MarchantRefence { get; }
+        public string  MarchantRefence { get; set; }
         private Credit() { }
 
         public static Credit Load(Guid id, Guid walletId, Amount amount, DateTime transactionDate,
-            string reference)
+            string reference,string marchantRef)
         {
             return new Credit()
             {
@@ -24,7 +24,9 @@ namespace App.Domains.Wallets
                 Id = id,
                 Reference = reference,
                 TransactionDate = transactionDate,
-                WalletId = walletId
+                WalletId = walletId,
+                MarchantRefence=marchantRef,
+
             };
         }
 

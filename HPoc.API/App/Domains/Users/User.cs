@@ -1,6 +1,6 @@
 ﻿using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace App.Domains.Users
 {
@@ -22,16 +22,22 @@ namespace App.Domains.Users
                 return walletIds;
             }
         }
-
-        public User(Name name, Email email, PhoneNumber phone)
+        [JsonConstructor]
+        private User(Name name, Email email, PhoneNumber phone)
         {
+            //run precondntions
             Id = Guid.NewGuid();
             Name = name;
             Email = email;
             PhoneNumber = phone;
             _wallets = new WalletCollection();
-        }
 
+            //raise new user created domain event
+        }
+        public static User Create(Name name,Email email,PhoneNumber phoneNumber)
+        {
+            return new(name, email, phoneNumber);
+        }
         public void Register(Guid walletId)
         {
             _wallets.Add(walletId);

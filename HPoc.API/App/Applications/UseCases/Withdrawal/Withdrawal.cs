@@ -36,6 +36,7 @@ namespace App.Applications.UseCases.Withdrawal
 
             Debit debit = (Debit)wallet.GetLastTransaction();
            
+            
             await _store.Update(wallet, debit);
 
             return new WithdrawalResult(

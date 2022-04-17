@@ -1,0 +1,192 @@
+{
+  "7ab6de6e-dfe0-4227-8c14-cf2a30a29c70": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 1230.0,
+    "TransactionDate": "2021-03-19T11:33:29.0753134Z",
+    "Reference": "3729df96-475f-43e5-8c00-c82844393a9e",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 1230 into wallet",
+    "MarchantRefence": "6A2C98F2-241B-4AF1-9E70-4B4C09A566D3",
+    "Id": "7ab6de6e-dfe0-4227-8c14-cf2a30a29c70"
+  },
+  "a4cf974b-d5f9-44a0-9bc5-3341ea697ed7": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 45000.0,
+    "TransactionDate": "2021-03-19T11:34:33.5638081Z",
+    "Reference": "c46020e8-6db4-4552-9d19-e352d4fd1337",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 45000 into wallet",
+    "MarchantRefence": "04773704-5C0C-463C-8E81-A062F924A1CD",
+    "Id": "a4cf974b-d5f9-44a0-9bc5-3341ea697ed7"
+  },
+  "477b73a5-2525-4a0f-a033-78d43ac50303": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 10000.0,
+    "TransactionDate": "2021-03-19T11:36:06.0757446Z",
+    "Reference": "b61349d5-b65d-46d8-bd42-b96e3e50ea3a",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 10000 into wallet",
+    "MarchantRefence": "89FFF12B-A868-475C-8D3A-4257CCDBB405",
+    "Id": "477b73a5-2525-4a0f-a033-78d43ac50303"
+  },
+  "d8c3e18e-b15d-474c-b399-8ec0f3160bbc": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 2300.0,
+    "TransactionDate": "2021-03-19T11:37:28.1931905Z",
+    "Reference": "57ee422d-30dc-413b-872a-23a9babbe9f0",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 2300 into wallet",
+    "MarchantRefence": "EA9854A6-A805-4CB2-A318-AE9ABDE33ADF",
+    "Id": "d8c3e18e-b15d-474c-b399-8ec0f3160bbc"
+  },
+  "650c06fe-d727-497e-b94b-24da3d8f356c": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 800.0,
+    "TransactionDate": "2021-03-19T11:50:01.9504609Z",
+    "Reference": "bb22e485-d706-4b51-9f11-763dee87d06b",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 800 into wallet",
+    "MarchantRefence": "B6132679-DA4E-4573-8FB8-0E6A787E4782",
+    "Id": "650c06fe-d727-497e-b94b-24da3d8f356c"
+  },
+  "35577107-7630-4dda-967f-baed832e760c": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 450.0,
+    "TransactionDate": "2021-03-19T15:41:15.8044489Z",
+    "Reference": "0c7b3c4c-fa25-4d4d-8068-2f94dc119c60",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 450 into wallet",
+    "MarchantRefence": "468B5CD8-80C6-4FE0-B89E-F3FAC648D29C",
+    "Id": "35577107-7630-4dda-967f-baed832e760c"
+  },
+  "b279dfdf-0af2-483a-84d1-0f3775e6bfb4": {
+    "WalletId": "e8cb3b0f-043b-4f26-aa42-2cd1e81a760f",
+    "Amount": 45000000000.0,
+    "TransactionDate": "2021-03-19T15:45:28.6346407Z",
+    "Reference": "8796cc1d-1068-4338-9102-2be36ff03a35",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 45000000000 into wallet",
+    "MarchantRefence": "942F3123-B5EA-4A6D-A829-6B26C04294BD",
+    "Id": "b279dfdf-0af2-483a-84d1-0f3775e6bfb4"
+  },
+  "fa653797-a3c9-470e-9ddd-76261468675c": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 1450000.0,
+    "TransactionDate": "2021-03-19T15:46:02.2009434Z",
+    "Reference": "91c8b0c4-4aca-4976-893a-ec8f3c876e01",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 1450000 into wallet",
+    "MarchantRefence": "230A91BB-1652-49EA-BAE8-997EF4F72972",
+    "Id": "fa653797-a3c9-470e-9ddd-76261468675c"
+  },
+  "f989c7a8-f023-4f2a-8a44-011528f356e0": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 75000000.0,
+    "TransactionDate": "2021-03-19T15:46:30.9314524Z",
+    "Reference": "1ce1f9e5-6a97-4fc6-9a95-797298810a71",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 75000000 into wallet",
+    "MarchantRefence": "EBB7B0AD-FCC2-427F-884B-F12AED21C7B2",
+    "Id": "f989c7a8-f023-4f2a-8a44-011528f356e0"
+  },
+  "51a72850-ec6c-4c23-8a4b-9b95f69756eb": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 10.0,
+    "TransactionDate": "2021-11-19T15:26:40.0577223Z",
+    "Reference": "4a099ea3-fc41-47aa-bb1a-a094cf2b0d93",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 10 into wallet",
+    "MarchantRefence": "BAFCDF90-6044-49FE-B015-97DD7B95F454",
+    "Id": "51a72850-ec6c-4c23-8a4b-9b95f69756eb"
+  },
+  "4fbe6349-7dd0-477c-8992-7b0d2a265d54": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 8900.0,
+    "TransactionDate": "2021-11-19T15:31:54.3290215Z",
+    "Reference": "05c1e5e9-dffa-4b56-9c2b-06e94a0087af",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 8900 into wallet",
+    "MarchantRefence": "C2B57BAB-0FDE-440E-AC2D-C8DE5513B197",
+    "Id": "4fbe6349-7dd0-477c-8992-7b0d2a265d54"
+  },
+  "bfa9b9ba-1678-49af-b4a9-948c66aa5637": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 50.0,
+    "TransactionDate": "2021-11-19T15:33:28.5082216Z",
+    "Reference": "20e96ebf-8656-4b0e-b691-8d8f904c4bd7",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 50 into wallet",
+    "MarchantRefence": "CE83370B-4B0B-480B-A0E6-9494BCEABF28",
+    "Id": "bfa9b9ba-1678-49af-b4a9-948c66aa5637"
+  },
+  "2584eab0-55b4-4dca-b855-f0160e5323a2": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 50000.0,
+    "TransactionDate": "2021-11-19T15:37:52.4634235Z",
+    "Reference": "ba05eb51-3d9c-4878-904d-98d7b0c4d8f5",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 50000 into wallet",
+    "MarchantRefence": "E88B10C8-91D5-407C-B9A6-DED75CA26DA6",
+    "Id": "2584eab0-55b4-4dca-b855-f0160e5323a2"
+  },
+  "a7da8e01-1b6a-4cd5-9045-66763805f867": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 1000.0,
+    "TransactionDate": "2021-11-19T15:59:39.5722112Z",
+    "Reference": "c33a19cd-722d-4d36-bd44-f1ccb214de8e",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 1000 into wallet",
+    "MarchantRefence": "32E4D07D-4D9F-436C-B11C-B75A0D708E20",
+    "Id": "a7da8e01-1b6a-4cd5-9045-66763805f867"
+  },
+  "95b7c7d1-c675-465e-afdf-cb5ed9a8b407": {
+    "WalletId": "3ac70d95-833c-4f77-b7d9-172d8fc38eee",
+    "Amount": 10.0,
+    "TransactionDate": "2021-11-24T08:30:25.1089364Z",
+    "Reference": "a670ea43-5220-4356-92c1-a45aa485699c",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 10 into wallet",
+    "MarchantRefence": "A717EE21-226E-4B4A-9C1B-61BEC5BC3C57",
+    "Id": "95b7c7d1-c675-465e-afdf-cb5ed9a8b407"
+  },
+  "2e03cc47-4e03-44b2-a5cd-44b814dc9f62": {
+    "WalletId": "3ac70d95-833c-4f77-b7d9-172d8fc38eee",
+    "Amount": 78000.0,
+    "TransactionDate": "2021-11-24T08:33:50.2305582Z",
+    "Reference": "73384fc5-26d2-43c2-aa9a-6487b076d989",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 78000 into wallet",
+    "MarchantRefence": "560A122E-2803-4C5A-9627-0756B45FE6E6",
+    "Id": "2e03cc47-4e03-44b2-a5cd-44b814dc9f62"
+  },
+  "5f4871e7-6676-4c3f-8b90-2e39d1c7a61d": {
+    "WalletId": "e7af24cd-9b28-4783-a300-a52001d8051f",
+    "Amount": 340.0,
+    "TransactionDate": "2021-11-24T09:03:01.6255671Z",
+    "Reference": "2d579ca9-5b00-4307-8b3c-69194be054ca",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 340 into wallet",
+    "MarchantRefence": "1D5E55FC-12E5-449B-9D27-A0174B0167E6",
+    "Id": "5f4871e7-6676-4c3f-8b90-2e39d1c7a61d"
+  },
+  "aa089da0-046b-4164-ab70-26d65a71479c": {
+    "WalletId": "10957e88-a9c4-446d-a9b6-e4aba1ef9ca2",
+    "Amount": 0.0,
+    "TransactionDate": "2022-02-20T19:09:00.3783155Z",
+    "Reference": "01e24401-2fbf-4e86-b698-8900ae53da9d",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 0 into wallet",
+    "MarchantRefence": "83D6B89C-DB14-47DF-BD0B-F1C618E554C7",
+    "Id": "aa089da0-046b-4164-ab70-26d65a71479c"
+  },
+  "1478fdf8-6d4f-439a-8c88-470eeaa8a0f3": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 1000.0,
+    "TransactionDate": "2022-02-20T19:12:20.1274042Z",
+    "Reference": "0001ba8b-8879-4830-b1ff-0d06fdbd05fb",
+    "TransactionType": "Credit",
+    "Narration": "Creditd 1000 into wallet",
+    "MarchantRefence": "EF0C5FDA-1BBF-40E6-A0F6-EC5ABF8695C4",
+    "Id": "1478fdf8-6d4f-439a-8c88-470eeaa8a0f3"
+  }
+}

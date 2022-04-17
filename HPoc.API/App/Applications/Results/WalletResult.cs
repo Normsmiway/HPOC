@@ -42,7 +42,7 @@ namespace  App.Applications.Results
         public WalletResult(Wallet wallet)
         {
             WalletId = wallet.Id;
-            WalletNumber = wallet.WalletNumber.Text;
+            WalletNumber = wallet.WalletNumber.Value;
             CurrentBalance = wallet.GetWalletBalance();
             TotalIncome = wallet.GetTotalIcome();
             TotalExpenses = wallet.GetTotalExpenses();

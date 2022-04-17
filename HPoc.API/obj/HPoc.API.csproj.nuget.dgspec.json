@@ -29,9 +29,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\5.0.0\\ref\\net5.0\\": {},
           "C:\\Users\\Surface\\Documents\\Clients\\Access\\FATCA\\App\\Fatca\\Fatca.Core\\bin\\Debug": {},
+          "C:\\Users\\Surface\\Documents\\Clients\\Equity\\Projects\\Amp\\Amp\\Amp.HttpConnector\\bin\\Debug": {},
           "C:\\Users\\Surface\\Documents\\Repos\\N\\N.Shared\\bin\\Release": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ICT-DevOps/_packaging/equity-omni%40Local/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -49,6 +52,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"

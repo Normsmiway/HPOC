@@ -34,7 +34,7 @@ namespace HPoc.API.Modules.Wallets.Withdrawal
         {
             if (result is null) { return new NoContentResult(); }
 
-            WithdrawalResultModel model = new WithdrawalResultModel(
+            WithdrawalResultModel model = new(
                 result.Transaction.Amount,
                 result.Transaction.TranactionType,
                 result.Transaction.TransactionDate,

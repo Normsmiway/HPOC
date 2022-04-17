@@ -1,29 +1,31 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace App.Domains.ValueObjects
 {
     public sealed class Amount
     {
-        private decimal _value;
+        public decimal Value { get; private set; }
 
+        [JsonConstructor]
         public Amount(decimal value)
         {
-            _value = value;
+            Value = value;
         }
 
         public override string ToString()
         {
-            return _value.ToString();
+            return Value.ToString();
         }
 
         public static implicit operator decimal(Amount value)
         {
-            return value._value;
+            return value.Value;
         }
 
         public static Amount operator -(Amount value)
         {
-            return new Amount(Math.Abs(value._value) * -1);
+            return new Amount(Math.Abs(value.Value) * -1);
         }
 
         public static implicit operator Amount(decimal value)
@@ -33,32 +35,32 @@ namespace App.Domains.ValueObjects
 
         public static Amount operator +(Amount amount1, Amount amount2)
         {
-            return new Amount(amount1._value + amount2._value);
+            return new Amount(amount1.Value + amount2.Value);
         }
 
         public static Amount operator -(Amount amount1, Amount amount2)
         {
-            return new Amount(amount1._value - amount2._value);
+            return new Amount(amount1.Value - amount2.Value);
         }
 
         public static bool operator <(Amount amount1, Amount amount2)
         {
-            return amount1._value < amount2._value;
+            return amount1.Value < amount2.Value;
         }
 
         public static bool operator >(Amount amount1, Amount amount2)
         {
-            return amount1._value > amount2._value;
+            return amount1.Value > amount2.Value;
         }
 
         public static bool operator <=(Amount amount1, Amount amount2)
         {
-            return amount1._value <= amount2._value;
+            return amount1.Value <= amount2.Value;
         }
 
         public static bool operator >=(Amount amount1, Amount amount2)
         {
-            return amount1._value >= amount2._value;
+            return amount1.Value >= amount2.Value;
         }
 
         public override bool Equals(object obj)
@@ -75,15 +77,15 @@ namespace App.Domains.ValueObjects
 
             if (obj is decimal)
             {
-                return (decimal)obj == _value;
+                return (decimal)obj == Value;
             }
 
-            return ((Amount)obj)._value == _value;
+            return ((Amount)obj).Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return _value.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

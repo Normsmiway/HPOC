@@ -14,7 +14,7 @@
                 <MudCard Elevation="0">
                     <MudCardContent>
                         <MudTextField Label="Wallet Number" HelperText="@walletUserName" OnKeyPress="MakeEnquiry" OnKeyUp="(async ()=>await KeyUp())"
-                                      @bind-Value="Model.WalletNumber" For="@(() => Model.WalletNumber)"
+                                      @bind-Value="Model.WalletNumber" For="@(() => Model.WalletNumber m)"
                                       Validation="@walletNumberValidator.Validation"
                                       Immediate="true" />
 

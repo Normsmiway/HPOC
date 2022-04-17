@@ -12,7 +12,7 @@ namespace App.Domains.Users
         {
             _walletds = new List<Guid>();
         }
-
+        public static WalletCollection Create() => new();
         public IReadOnlyCollection<Guid> GetWalletIds()
         {
             IReadOnlyCollection<Guid> walletIds = new ReadOnlyCollection<Guid>(_walletds);

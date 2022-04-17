@@ -77,14 +77,14 @@ namespace HPoc.Web.Sevices
         private async Task<T> PostAsync<T>(object request, string endpoint) where T : class, new()
         {
             T result = new();
-            var data =
-                  new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await _client.PostAsync(endpoint, data);
-            var content = await response.Content.ReadAsStringAsync();
+
 
             try
             {
-
+                var data =
+                                  new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await _client.PostAsync(endpoint, data);
+                var content = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
                 {
                     result = JsonSerializer.Deserialize<T>(content, _options);

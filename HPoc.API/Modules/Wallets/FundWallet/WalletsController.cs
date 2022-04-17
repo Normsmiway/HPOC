@@ -34,7 +34,7 @@ namespace HPoc.API.Modules.Wallets.FundWallet
             if (result is null)
                 return new NoContentResult();
 
-            Model model = new Model(result.Transaction.Amount,
+            Model model = new(result.Transaction.Amount,
                 result.Transaction.TranactionType,
                 result.Transaction.TransactionDate,
                 result.CurrentBalace, result.Transaction.Reference,

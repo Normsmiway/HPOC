@@ -1,0 +1,122 @@
+{
+  "b2d91b17-92b0-4818-a737-690e66ed3a74": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 10000.0,
+    "TransactionDate": "2021-03-19T11:36:06.0043534Z",
+    "Reference": "c25eaae2-01fa-42bf-a8aa-c5b42beb2d6e",
+    "TransactionType": "Debit",
+    "Narration": "testing",
+    "MarchantRefence": "89FFF12B-A868-475C-8D3A-4257CCDBB405",
+    "Id": "b2d91b17-92b0-4818-a737-690e66ed3a74"
+  },
+  "0686eb7a-8258-4418-af1f-114aaffd0483": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 2500.0,
+    "TransactionDate": "2021-03-19T11:36:29.7254333Z",
+    "Reference": "88f859ff-f622-4fea-8ff8-7fcbd2204baa",
+    "TransactionType": "Debit",
+    "Narration": "Use",
+    "MarchantRefence": "35B7A57C-364C-4D26-9395-30157775714E",
+    "Id": "0686eb7a-8258-4418-af1f-114aaffd0483"
+  },
+  "825bb6f3-f6cf-4454-8b33-be9c11d5b454": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 2500.0,
+    "TransactionDate": "2021-03-19T11:38:42.6056539Z",
+    "Reference": "cb1b1046-75d8-4bea-804a-9f84d3a2f92d",
+    "TransactionType": "Debit",
+    "Narration": "Use",
+    "MarchantRefence": "181F631E-49FB-4254-B15E-93063A9D65A8",
+    "Id": "825bb6f3-f6cf-4454-8b33-be9c11d5b454"
+  },
+  "893d84da-6fcf-43c3-bcbf-26c643f0659d": {
+    "WalletId": "6b38ca4f-f364-4b43-910d-ec0b37fa87d3",
+    "Amount": 800.0,
+    "TransactionDate": "2021-03-19T11:50:01.8470779Z",
+    "Reference": "f74ec0b7-1f01-42a6-822a-583588ebb794",
+    "TransactionType": "Debit",
+    "Narration": "teest",
+    "MarchantRefence": "B6132679-DA4E-4573-8FB8-0E6A787E4782",
+    "Id": "893d84da-6fcf-43c3-bcbf-26c643f0659d"
+  },
+  "0a9c371d-ded7-49aa-9a38-73f63f1ed6de": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 450.0,
+    "TransactionDate": "2021-03-19T15:41:13.778293Z",
+    "Reference": "73289a5e-e914-4e6c-b545-e847c0bfb4c1",
+    "TransactionType": "Debit",
+    "Narration": "string",
+    "MarchantRefence": "468B5CD8-80C6-4FE0-B89E-F3FAC648D29C",
+    "Id": "0a9c371d-ded7-49aa-9a38-73f63f1ed6de"
+  },
+  "b9b9e448-2986-468b-b559-a80f01366b0f": {
+    "WalletId": "e8cb3b0f-043b-4f26-aa42-2cd1e81a760f",
+    "Amount": 1450000.0,
+    "TransactionDate": "2021-03-19T15:46:02.1553638Z",
+    "Reference": "20faf287-b2ec-4cb6-909a-40c39e94b2ea",
+    "TransactionType": "Debit",
+    "Narration": "string",
+    "MarchantRefence": "230A91BB-1652-49EA-BAE8-997EF4F72972",
+    "Id": "b9b9e448-2986-468b-b559-a80f01366b0f"
+  },
+  "e1b882de-c6a4-4661-9c6f-345e480ed0f8": {
+    "WalletId": "e8cb3b0f-043b-4f26-aa42-2cd1e81a760f",
+    "Amount": 75000000.0,
+    "TransactionDate": "2021-03-19T15:46:30.8877342Z",
+    "Reference": "773a5b9e-f3ee-40a3-b8e8-a8bb1ac80890",
+    "TransactionType": "Debit",
+    "Narration": "Huge",
+    "MarchantRefence": "EBB7B0AD-FCC2-427F-884B-F12AED21C7B2",
+    "Id": "e1b882de-c6a4-4661-9c6f-345e480ed0f8"
+  },
+  "4972a494-fbea-4e7a-b5dd-bd71c2e88380": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 50.0,
+    "TransactionDate": "2021-11-19T15:33:28.4599742Z",
+    "Reference": "fe8bf111-e71f-4413-b94a-853a7a0c4c6e",
+    "TransactionType": "Debit",
+    "Narration": "Gift",
+    "MarchantRefence": "CE83370B-4B0B-480B-A0E6-9494BCEABF28",
+    "Id": "4972a494-fbea-4e7a-b5dd-bd71c2e88380"
+  },
+  "4371c639-98bd-440a-84d0-abed914ae046": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 50000.0,
+    "TransactionDate": "2021-11-19T15:37:52.4012969Z",
+    "Reference": "909c45b5-d95e-4c7b-903b-b433856a209c",
+    "TransactionType": "Debit",
+    "Narration": "Gift from Adesanya's",
+    "MarchantRefence": "E88B10C8-91D5-407C-B9A6-DED75CA26DA6",
+    "Id": "4371c639-98bd-440a-84d0-abed914ae046"
+  },
+  "0736acd1-0ffa-4533-86a4-57fb7feac728": {
+    "WalletId": "e37aeb74-4955-412c-91bb-c89c7556521e",
+    "Amount": 1000.0,
+    "TransactionDate": "2021-11-19T15:59:39.4235648Z",
+    "Reference": "2daaff7c-530b-4bdf-8283-0446fdea23ac",
+    "TransactionType": "Debit",
+    "Narration": "Fund transfer from Adefarati Lekiti",
+    "MarchantRefence": "32E4D07D-4D9F-436C-B11C-B75A0D708E20",
+    "Id": "0736acd1-0ffa-4533-86a4-57fb7feac728"
+  },
+  "c76256e2-c537-499f-8f1c-9496c0d49087": {
+    "WalletId": "3ac70d95-833c-4f77-b7d9-172d8fc38eee",
+    "Amount": 5.0,
+    "TransactionDate": "2021-11-24T08:33:31.9453158Z",
+    "Reference": "095915d7-bc04-4c95-9acf-7e9427135ac1",
+    "TransactionType": "Debit",
+    "Narration": "Personal Funding",
+    "MarchantRefence": "3A2B369E-2727-435A-947F-4DF3A7194BE8",
+    "Id": "c76256e2-c537-499f-8f1c-9496c0d49087"
+  },
+  "c123c1d3-ece2-4d2c-9014-cc716d6ce013": {
+    "WalletId": "710ad441-38fb-4829-b6fb-027b0e567803",
+    "Amount": 1000.0,
+    "TransactionDate": "2022-02-20T19:12:20.0591235Z",
+    "Reference": "cfb2f7cb-940b-4e15-8c4e-342c52c76014",
+    "TransactionType": "Debit",
+    "Narration": "Fund transfer from Ade Kicks",
+    "MarchantRefence": "EF0C5FDA-1BBF-40E6-A0F6-EC5ABF8695C4",
+    "Id": "c123c1d3-ece2-4d2c-9014-cc716d6ce013"
+  }
+}

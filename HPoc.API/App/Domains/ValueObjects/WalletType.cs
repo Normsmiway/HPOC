@@ -1,27 +1,32 @@
-﻿namespace App.Domains.ValueObjects
+﻿
+
+using Newtonsoft.Json;
+
+namespace App.Domains.ValueObjects
 {
     public sealed class WalletType
     {
-        public string Text { get; private set; }
+        public string Value { get;  set; }
 
-        public WalletType(string text)
+        [JsonConstructor]
+        public WalletType(string value)
         {
-            if (string.IsNullOrWhiteSpace(text))
+            if (string.IsNullOrWhiteSpace(value))
                 throw new WalletNumberShouldNotBeEmptyException("WalletType is required");
-            Text = text;
+            Value = value;
 
         }
 
         public override string ToString()
         {
-            return Text.ToString();
+            return Value.ToString();
         }
 
         public static implicit operator WalletType(string text)
             => new WalletType(text);
 
         public static implicit operator string(WalletType number)
-            => number.Text;
+            => number.Value;
 
         public override bool Equals(object obj)
         {
@@ -37,14 +42,14 @@
 
             if (obj is string)
             {
-                return obj.ToString() == Text;
+                return obj.ToString() == Value;
             }
 
-            return ((WalletType)obj).Text == Text;
+            return ((WalletType)obj).Value == Value;
         }
 
         public override int GetHashCode()
-            => Text.GetHashCode();
+            => Value.GetHashCode();
 
     }
 }
